@@ -50,8 +50,8 @@ export class LoginPage  implements OnInit{
         Validators.minLength(5),
       ]),
     });
-    // this.form.controls.username.setValue('rafael.ceballos@xibalbalabs.com');
-    // this.form.controls.password.setValue('tipo1234');
+    this.form.controls.username.setValue('rafael.ceballos@xibalbalabs.com');
+    this.form.controls.password.setValue('tipo1234');
   }
 
   // convenience getter for easy access to form fields

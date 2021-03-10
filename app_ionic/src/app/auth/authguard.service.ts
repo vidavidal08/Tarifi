@@ -4,7 +4,9 @@ import { Observable } from 'rxjs';
 
 import { GlobalStorage } from '../services/global-storage.service';
 
-@Injectable()
+@Injectable({
+  providedIn: 'root',
+})
 export class AuthGuardService implements CanActivate {
   constructor(
     private gs: GlobalStorage,
