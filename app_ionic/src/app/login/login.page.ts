@@ -1,13 +1,11 @@
-import { User } from './../auth/user.model';
 import { Component, OnInit } from '@angular/core';
-import { AuthService } from '../auth/auth.service';
-import { LoadingController, AlertController } from '@ionic/angular';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms';
-import { ConsultaPage } from '../consulta/consulta.page';
-import { ThisReceiver } from '@angular/compiler';
-import { GlobalStorage } from '../services/global-storage.service';
+import { AlertController, LoadingController } from '@ionic/angular';
+
+import { AuthService } from '../auth/auth.service';
 import { Login } from '../models/login';
+import { GlobalStorage } from '../services/global-storage.service';
 
 @Component({
   selector: 'app-login',
@@ -35,6 +33,11 @@ export class LoginPage  implements OnInit{
   get f() { return this.form.controls; }
 
   ngOnInit(): void {
+    if(this.globalStorage.isAuthenticated()) {
+      console.log('authenticated');
+      this.router.navigateByUrl('/home');
+      return;
+    };
      //this.form.reset();
 
     this.form = new FormGroup({
