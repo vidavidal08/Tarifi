@@ -1,3 +1,4 @@
+import { SharedModule } from './../components/shared.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -13,7 +14,8 @@ import { ConsultaPage } from './consulta.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    ConsultaPageRoutingModule
+    ConsultaPageRoutingModule,
+    SharedModule
   ],
   declarations: [ConsultaPage]
 })
