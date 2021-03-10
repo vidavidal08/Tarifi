@@ -14,7 +14,7 @@
   <label class="form-control">Descripción</label><br>
 </div>
 <ion-list>
-  <ion-item *ngFor="let item of fracciones" >
+  <ion-item *ngFor="let item of fracciones" [routerLink]="['/detalle-nico', item.id]" >
     <ion-label>{{ item.descripcion}}</ion-label>
   </ion-item>
 </ion-list>

@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./consuldescrip.page.scss'],
 })
 export class ConsuldescripPage implements OnInit {
-
+  public descripcion: string = '';
   constructor() { }
 
   ngOnInit() {

@@ -31,12 +31,12 @@ const routes: Routes = [
     canActivate: [AuthGuardService]
   },
   {
-    path: 'list-nico/:clave',
+    path: 'list-nico/:tipobusqueda/:clave',
     loadChildren: () => import('./list-nico/list-nico.module').then( m => m.ListNicoPageModule),
     canActivate: [AuthGuardService]
   },
   {
-    path: 'detalle-nico',
+    path: 'detalle-nico/:id',
     loadChildren: () => import('./detalle-nico/detalle-nico.module').then( m => m.DetalleNicoPageModule),
     canActivate: [AuthGuardService]
   },
