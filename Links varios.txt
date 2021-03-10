@@ -1,0 +1,28 @@
+https://mail.google.com/mail/u/0/?ogbl#inbox/FMfcgxwLsSdBDcKfjMzRqvqTKRhlxsvh?projector=1&messagePartId=0.1
+
+nicobytes/codelab-capacitorpreview
+
+https://www.youtube.com/watch?v=JuYZ2xdHw3o&feature=youtu.be
+ESTE VIDEO TE EXPLICA COMO CREAR UN PROYECTO CON ANGULAR+IOINIC+CAPACITOR
+
+CORRERLO EN ANDROID Y GENERARL EL APK
+https://animista.net/play/entrances
+https://www.positronx.io/create-ionic-login-sign-up-ui-with-angular/
+
+npx cap add android  || Compilar por primera vez android
+npx cap open android
+
+*****Comandos para actualizar la capa de android 
+
+ng build
+npx cap sync
+npx cap copy   
+npx cap update 
+npx cap open android
+
+
+https://www.npmjs.com/package/cordova-plugin-decimal-key PLUGIN para usar teclado 
+
+https://www.npmjs.com/package/custom-maxlength
+
+npm install custom-maxlength --save
