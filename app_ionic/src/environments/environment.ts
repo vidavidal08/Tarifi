@@ -3,7 +3,8 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  urlBase: 'https://nicosappapi20210227004145.azurewebsites.net/api/v1/'
 };
 
 /*
