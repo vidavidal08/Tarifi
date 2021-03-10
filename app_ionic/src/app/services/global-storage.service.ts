@@ -33,5 +33,12 @@ export class  GlobalStorage {
         resolve(itemToReturn);
       });
     }
-
+    public getCurrentUserNoPromise(): Login {
+      let itemStrginValue = localStorage.getItem(authentication.loginStorageKey);
+      const itemToReturn = JSON.parse(itemStrginValue) as Login;
+      return itemToReturn;
+    }
+    public isAuthenticated(): boolean {
+      return !!localStorage.getItem(authentication.loginStorageKey);
+    }
 }

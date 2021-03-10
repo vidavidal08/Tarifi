@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { AuthGuardService } from './auth/authguard.service';
 
 const routes: Routes = [
   {
     path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule),
+    canActivate: [AuthGuardService]
   },
  /* {
     path: '',
@@ -25,27 +27,33 @@ const routes: Routes = [
   },
   {
     path: 'consulta',
-    loadChildren: () => import('./consulta/consulta.module').then( m => m.ConsultaPageModule)
+    loadChildren: () => import('./consulta/consulta.module').then( m => m.ConsultaPageModule),
+    canActivate: [AuthGuardService]
   },
   {
     path: 'list-nico',
-    loadChildren: () => import('./list-nico/list-nico.module').then( m => m.ListNicoPageModule)
+    loadChildren: () => import('./list-nico/list-nico.module').then( m => m.ListNicoPageModule),
+    canActivate: [AuthGuardService]
   },
   {
     path: 'detalle-nico',
-    loadChildren: () => import('./detalle-nico/detalle-nico.module').then( m => m.DetalleNicoPageModule)
+    loadChildren: () => import('./detalle-nico/detalle-nico.module').then( m => m.DetalleNicoPageModule),
+    canActivate: [AuthGuardService]
   },
   {
     path: 'editar-perfil',
-    loadChildren: () => import('./editar-perfil/editar-perfil.module').then( m => m.EditarPerfilPageModule)
+    loadChildren: () => import('./editar-perfil/editar-perfil.module').then( m => m.EditarPerfilPageModule),
+    canActivate: [AuthGuardService]
   },
   {
     path: 'consuldescrip',
-    loadChildren: () => import('./consuldescrip/consuldescrip.module').then( m => m.ConsuldescripPageModule)
+    loadChildren: () => import('./consuldescrip/consuldescrip.module').then( m => m.ConsuldescripPageModule),
+    canActivate: [AuthGuardService]
   },
   {
     path: 'home-consulta',
-    loadChildren: () => import('./home-consulta/home-consulta.module').then( m => m.HomeConsultaPageModule)
+    loadChildren: () => import('./home-consulta/home-consulta.module').then( m => m.HomeConsultaPageModule),
+    canActivate: [AuthGuardService]
   },
   {
     path: 'registro-exitoso',
