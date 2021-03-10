@@ -1,7 +1,9 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { catchError, map } from 'rxjs/operators';
+import { environment } from 'src/environments/environment';
+import { Fraccion } from '../models/fraccion';
+
 import { Registro } from '../models/registro.model';
 import { ResponseRegistro } from '../models/response-registro-model';
 
@@ -9,15 +11,12 @@ import { ResponseRegistro } from '../models/response-registro-model';
   providedIn: 'root'
 })
 export class ApiSwaggerService {
+  private url = environment.urlBase;
 
-  private url = 'https://nicosappapi20210227004145.azurewebsites.net/api';
-
-  constructor(private http: HttpClient) {
-  
-   }
+  constructor(private http: HttpClient) {}
 
    private headers =  {
-    headers: new  HttpHeaders({ 
+    headers: new  HttpHeaders({
       'Content-Type': 'application/json'})
   };
 
@@ -25,7 +24,7 @@ export class ApiSwaggerService {
     return this.http.post<ResponseRegistro[]>(`${this.url}/usuario/registrar`,registro);
    /* return this.http.post(`${this.url}/usuario/registrar`, registro).pipe(
       map(results => {
-    
+
         return Response;
       }),
       catchError(error => {
@@ -34,5 +33,8 @@ export class ApiSwaggerService {
         return null;
       })
     );*/
+  }
+  public getFraccionesNicos(): Promise<Array<Fraccion>> {
+    return this.http.get<Array<Fraccion>>(this.url+'Fraccion',{}).toPromise();
   }
 }
