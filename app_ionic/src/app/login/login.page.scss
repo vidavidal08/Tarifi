@@ -1,0 +1,31 @@
+.img-logo{
+    margin-top: 15%;
+    width: 25%;
+}
+.wrap{ position:relative; margin:0 auto; width:960px; }
+#footer1,#footer2 {
+    width:100%; float:left; 
+    position:fixed; 
+    bottom:0; 
+    z-index:999999;
+ 
+
+}
+#footer1{
+height: 90px;
+background-color:#737373;
+}
+#footer2{
+    height: 32px;
+    background-color:#ffbd59;
+}
+
+.btn-registrarse{
+    background-color: #ffbd59;
+    color: white;
+}
+
+.btn-iniciar{
+    border-color: #ffbd59;
+
+}

@@ -1,0 +1,45 @@
+<ion-header [translucent]="true" >
+  <ion-toolbar class="new-background-color">
+    <ion-title style="color:white;text-align:center;" >
+    Hola Guadalupe 
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <img src="assets/logo.png" class="img-logo" style="position: absolute;left: 8%;">
+  <div class="container ion-text-center">
+    <div class="row" style="margin-top: 15%;">
+    <!-- <img src="assets/buscar_nico.png"
+     style="width: 20%; 
+    float: left;
+    margin-left: 15%;
+    ">   -->
+
+    <ion-button expand="block"  class="btn-registrarse" color="#ffbd59"
+    [routerLink]="['/consulta']"
+    id="btn-consulta-fa"
+    >Consultar por clave<br> fracción arancelaria </ion-button><br>
+    <!-- <img src="assets/logo.png" class="img-logo" style="opacity: 0.4;  width: 46%;"> -->
+    <ion-button expand="block"  class="btn-registrarse" color="#ffbd59"
+    id=btn-consulta-descrip
+    [routerLink]="['/consuldescrip']"
+    >Consultar por descripción<br>fracción arancelaria </ion-button><br>
+    
+    
+  </div>
+
+ 
+  </div>
+ 
+  <ion-footer style="
+  margin-top: 10%;
+">
+    <ion-toolbar>
+      <ion-title>Footer</ion-title>
+      <div id="footer1"> <div class="wrap"> <p></p> </div> </div>
+       <div id="footer2"> <div class="wrap"> <p></p> </div> </div>
+    </ion-toolbar>
+  </ion-footer>
+
+</ion-content>

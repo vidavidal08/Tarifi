@@ -1,0 +1,56 @@
+<ion-content>
+  <div class="container ion-text-center">
+    <img src="assets/logo.png" class="img-logo"><br><br>
+    <label>Todo el Comext a tu alcance</label>
+  </div>
+  <form [formGroup]="form"  (ngSubmit)="onSubmit()">
+    <ion-item lines="full">
+      <ion-label position="floating">Correo Electrónico</ion-label>
+      <ion-input type="text"  formControlName="username" ></ion-input>
+    
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating" >Contraseña</ion-label>
+      <ion-input type="password"   formControlName="password"      ></ion-input>
+    </ion-item><br>
+
+    <ion-button expand="block" fill="outline" class="btn-iniciar" color="warning" style="margin-top: 5%;margin-bottom: 5%;"
+    type="submit"
+    [disabled]="form.invalid"
+    >
+    Inicisar Sesión</ion-button>
+  </form>
+  <ion-button expand="block"  class="btn-registrarse" color="#ffbd59"
+  [routerLink]="['/home']"
+  >IR A HOME DIRECTO</ion-button><br>
+    <ion-button expand="block"  class="btn-registrarse" color="#ffbd59"
+    [routerLink]="['/registro']"
+    >REGISTRARSE</ion-button><br>
+    <ion-button expand="block" fill="outline"  style="margin-top: 2%;"
+    [routerLink]="['/recuperarContrasena']"
+    >¿Olvidaste tu contraseña?</ion-button>
+  
+    <!-- <ion-row>
+    
+        <div>
+          <ion-col>
+            <ion-button  [routerLink]="['/home']" type="submit"  fill="outline" >Inicisar Sesión</ion-button><br>
+        <ion-button  type="submit"  fill="outline" class="btn-registrarse">REGISTRARSE</ion-button><br>
+        <a [routerLink]="['/forgot-password']" class="small-text">¿Olvidaste tu contraseña?</a>
+      </ion-col>
+      </div>
+    </ion-row> -->
+    
+
+  <ion-footer style="
+  margin-top: 10%;
+">
+    <ion-toolbar>
+      <ion-title>Footer</ion-title>
+      <div id="footer1"> <div class="wrap"> <p></p> </div> </div>
+       <div id="footer2"> <div class="wrap"> <p></p> </div> </div>
+    </ion-toolbar>
+  </ion-footer>
+
+</ion-content>
