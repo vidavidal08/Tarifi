@@ -1,3 +1,4 @@
+import { User } from './../auth/user.model';
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../auth/auth.service';
 import { LoadingController, AlertController } from '@ionic/angular';
@@ -5,6 +6,8 @@ import { Router } from '@angular/router';
 import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms';
 import { ConsultaPage } from '../consulta/consulta.page';
 import { ThisReceiver } from '@angular/compiler';
+import { GlobalStorage } from '../services/global-storage.service';
+import { Login } from '../models/login';
 
 @Component({
   selector: 'app-login',
@@ -19,12 +22,13 @@ export class LoginPage  implements OnInit{
 
 
   constructor(
-   // private authService: AuthService,
+    private authService: AuthService,
     private alertController: AlertController,
     private alertCtrl: AlertController,
     private loadingCtrl: LoadingController,
     private router: Router,
-    private formBuilder: FormBuilder
+    private formBuilder: FormBuilder,
+    private globalStorage: GlobalStorage
   ) { }
 
 
@@ -43,13 +47,15 @@ export class LoginPage  implements OnInit{
         Validators.minLength(5),
       ]),
     });
+    // this.form.controls.username.setValue('rafael.ceballos@xibalbalabs.com');
+    // this.form.controls.password.setValue('tipo1234');
   }
 
   // convenience getter for easy access to form fields
- 
+
 
   async RespuestaBack(){
-   
+
 
     const alert = await this.alertController.create({
      cssClass: 'my-custom-class',
@@ -58,9 +64,9 @@ export class LoginPage  implements OnInit{
      message: 'Intente nuevamente',
      buttons: ['OK']
    });
- 
+
    await alert.present();
-  
+
 }
 
  async onSubmit() {
@@ -69,23 +75,30 @@ export class LoginPage  implements OnInit{
 
   //this.RespuestaBack();
    //console.log(this.form.value);
-
-
-  /*  const loading = await this.loadingCtrl.create({ message: 'Logging in ...' });
-    await loading.present();
-   
-    this.authService.login(this.form.value).subscribe(
+   const loading = await this.loadingCtrl.create({ message: 'Logging in ...' });
+   await loading.present();
+   const userToIn: Login = {
+    email: this.f.username.value,
+    password: this.f.password.value,
+    token: ''
+    };
+    this.authService.login(userToIn).subscribe(
       async token => {
-        localStorage.setItem('token', token);
+        const userLogedIn: Login = {
+          email: this.f.username.value,
+          password: this.f.password.value,
+          token: token
+        };
+        this.globalStorage.setUserLogin(userLogedIn).then();
         loading.dismiss();
-        this.router.navigateByUrl('/create');
+        this.router.navigateByUrl('/home');
       },
       async () => {
         const alert = await this.alertCtrl.create({ message: 'Login Failed', buttons: ['OK'] });
         await alert.present();
         loading.dismiss();
       }
-    );*/
+    );
   }
 
 }
