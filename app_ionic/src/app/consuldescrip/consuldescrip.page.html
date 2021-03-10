@@ -13,17 +13,12 @@
 <label>Ingresa la descripción del NICO</label>
 </div>
 <ion-item lines="full" style="margin-top: 50px;">
-  <ion-col> <div class="input-nico"><ion-input type="text" placeholder="Ejemplo Descrip" ></ion-input></div></ion-col>
+  <ion-col> <div class="input-nico"><ion-input type="text" [(ngModel)]="descripcion"  placeholder="Ejemplo Descrip" ></ion-input></div></ion-col>
 </ion-item>
 <div class="div-registrarse">
 <br><br>
-  <ion-button color="warning"     [routerLink]="['/list-nico']">Buscar NICO</ion-button>
+  <ion-button color="warning" [routerLink]="['/list-nico', 'descripcion', descripcion]">Buscar NICO</ion-button>
 </div>
-</ion-content> 
+</ion-content>
 <ion-content>
-
-
-
-
-
 </ion-content>

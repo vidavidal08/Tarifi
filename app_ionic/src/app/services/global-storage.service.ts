@@ -1,6 +1,8 @@
+import { catalogs } from './../models/constants';
 import { Injectable } from '@angular/core';
 
 import { authentication } from '../models/constants';
+import { Fraccion } from '../models/fraccion';
 import { Login } from '../models/login';
 
 @Injectable({
@@ -40,5 +42,11 @@ export class  GlobalStorage {
     }
     public isAuthenticated(): boolean {
       return !!localStorage.getItem(authentication.loginStorageKey);
+    }
+    public setFracciones(fracciones: Array<Fraccion>): void {
+      this.setData(fracciones, catalogs.fracciones);
+    }
+    public getFracciones(): Promise<Array<Fraccion>> {
+      return this.getData<Array<Fraccion>>(catalogs.fracciones);
     }
 }
