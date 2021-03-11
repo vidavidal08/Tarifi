@@ -10,7 +10,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "cpb": "ionic cap build android"
+    "cpb": "ionic cap build android",
+    "cba": "ionic cordova build android"
   },
   "private": true,
   "dependencies": {
