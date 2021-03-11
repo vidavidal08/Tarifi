@@ -2,5 +2,6 @@ export const authentication = {
   loginStorageKey: 'loginStorageKey'
 };
 export const catalogs = {
-  fracciones: 'fracciones'
+  fracciones: 'fracciones',
+  nicosCounter: 'nicosCounter'
 }
