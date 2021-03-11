@@ -20,8 +20,7 @@ export class GlobalStorage {
   }
   public getData<T>(key: string): Promise<T> {
     return new Promise<T>((resolve, reject) => {
-      let itemStrginValue = localStorage.getItem(key);
-      const itemToReturn = JSON.parse(itemStrginValue) as T;
+      const itemToReturn = this.getDataSync<T>(key);
       resolve(itemToReturn);
     });
   }
@@ -34,14 +33,12 @@ export class GlobalStorage {
   }
   public getCurrentUser(): Promise<Login> {
     return new Promise<Login>((resolve, reject) => {
-      let itemStrginValue = localStorage.getItem(authentication.loginStorageKey);
-      const itemToReturn = JSON.parse(itemStrginValue) as Login;
+      const itemToReturn = this.getDataSync<Login>(authentication.loginStorageKey);
       resolve(itemToReturn);
     });
   }
   public getCurrentUserNoPromise(): Login {
-    let itemStrginValue = localStorage.getItem(authentication.loginStorageKey);
-    const itemToReturn = JSON.parse(itemStrginValue) as Login;
+    const itemToReturn = this.getDataSync<Login>(authentication.loginStorageKey);
     return itemToReturn;
   }
   public isAuthenticated(): boolean {
@@ -60,16 +57,27 @@ export class GlobalStorage {
   public setSelectedNicoCounter(fraccion: Fraccion) {
     this.getData<Array<Fraccion>>(catalogs.nicosCounter)
     .then(items => {
-      const existsItem = !!items.find( x=> x.id === fraccion.id);
+      const existsItem = !!items &&  !!items.find( x=> x.id === fraccion.id);
       if (existsItem) {
         const existingFraccionIndex = items.findIndex( x=> x.id === fraccion.id);
         items[existingFraccionIndex]['counter']++;
         this.setData(items,catalogs.nicosCounter);
       } else {
         fraccion['counter'] = 1;
+        items = !!items ? items : new Array<Fraccion>();
         items.push(fraccion);
         this.setData(items,catalogs.nicosCounter);
       }
     });
+  }
+  public getSelectedNicoCounter(): Array<Fraccion> {
+    let fracciones = this.getDataSync<Array<Fraccion>>(catalogs.nicosCounter);
+    fracciones = !!fracciones ? fracciones : new Array<Fraccion>();
+    return fracciones;
+  }
+  public getDataSync<T>(key: string) {
+    let itemStrginValue = localStorage.getItem(key);
+    const itemToReturn = JSON.parse(itemStrginValue) as T;
+    return itemToReturn;
   }
 }

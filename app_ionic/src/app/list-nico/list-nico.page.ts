@@ -18,19 +18,33 @@ export class ListNicoPage implements OnInit {
     private gs: GlobalStorage
   ) { }
 
-  ngOnInit() {
+  ngOnInit() {}
+  ionViewWillEnter() {
     const routeParams = this.route.snapshot.paramMap;
     const tipobusqueda = routeParams.get('tipobusqueda');
     let clave = routeParams.get('clave');
     clave = clave === '..' ? '' : clave;
-    this.apiSwaggerService.getFraccionesNicos().then( data => {
-      if(tipobusqueda === 'clave') {
-        this.fracciones = data.filter( (item) => item.claveFraccion.includes(clave)).sort();
-      }
-      else {
-        this.fracciones = data.filter( (item) => item.descripcion && item.descripcion.includes(clave)).sort();
-      }
+    if(tipobusqueda === 'top10') {
+      this.fracciones = this.gs.getSelectedNicoCounter().sort( (a,b) => {
+        if( a['counter'] > b['counter']) {
+          return 1;
+        } else if(a['counter'] < b['counter']) {
+          return -1;
+        } else {
+          return 0;
+        }
+      }).slice(0,10);
       this.gs.setFracciones(this.fracciones);
-    });
+    } else {
+      this.apiSwaggerService.getFraccionesNicos().then( data => {
+        if(tipobusqueda === 'clave') {
+          this.fracciones = data.filter( (item) => item.claveFraccion.includes(clave)).sort();
+        }
+        else if(tipobusqueda === 'descripcion'){
+          this.fracciones = data.filter( (item) => item.descripcion && item.descripcion.includes(clave)).sort();
+        }
+        this.gs.setFracciones(this.fracciones);
+      });
+    }
   }
 }
