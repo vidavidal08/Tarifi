@@ -1,3 +1,4 @@
+import { Fraccion } from './../models/fraccion';
 import { catalogs } from './../models/constants';
 import { Injectable } from '@angular/core';
 
@@ -56,5 +57,20 @@ export class GlobalStorage {
   }
   public authentication(): Observable<Login> {
     return this.currentUser.asObservable();
+  }
+  public setSelectedNicoCounter(fraccion: Fraccion) {
+    this.getData<Array<Fraccion>>(catalogs.nicosCounter)
+    .then(items => {
+      const existsItem = !!items.find( x=> x.id === fraccion.id);
+      if (existsItem) {
+        const existingFraccionIndex = items.findIndex( x=> x.id === fraccion.id);
+        items[existingFraccionIndex]['counter']++;
+        this.setData(items,catalogs.nicosCounter);
+      } else {
+        fraccion['counter'] = 1;
+        items.push(fraccion);
+        this.setData(items,catalogs.nicosCounter);
+      }
+    });
   }
 }
