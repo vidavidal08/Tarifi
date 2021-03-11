@@ -28,6 +28,7 @@ export class DetalleNicoPage implements OnInit {
     this.gs.getFracciones()
     .then(fracciones => {
       this.fraccion = fracciones.find( item => item.id === id);
+      this.gs.setSelectedNicoCounter(this.fraccion);
     });
   }
 
