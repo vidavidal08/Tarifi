@@ -1,3 +1,4 @@
+import { ApiSwaggerService } from './../services/api-swagger.service';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
@@ -26,6 +27,7 @@ export class LoginPage  implements OnInit{
     private loadingCtrl: LoadingController,
     private router: Router,
     private formBuilder: FormBuilder,
+    private apiSwaggerService: ApiSwaggerService,
     private globalStorage: GlobalStorage
   ) { }
 
@@ -52,6 +54,11 @@ export class LoginPage  implements OnInit{
     });
     this.form.controls.username.setValue('rafael.ceballos@xibalbalabs.com');
     this.form.controls.password.setValue('tipo1234');
+    this.apiSwaggerService.getFraccionesNicos()
+    .then( data => {
+      console.log(data);
+      this.globalStorage.setFraccionesCache(data);
+    });
   }
 
   // convenience getter for easy access to form fields
