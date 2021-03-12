@@ -50,8 +50,8 @@ export class LoginPage  implements OnInit{
         Validators.minLength(5),
       ]),
     });
-    this.form.controls.username.setValue('rafael.ceballos@xibalbalabs.com');
-    this.form.controls.password.setValue('tipo1234');
+    this.form.controls.username.setValue('');
+    this.form.controls.password.setValue('');
   }
 
   // convenience getter for easy access to form fields
@@ -97,7 +97,7 @@ export class LoginPage  implements OnInit{
         this.router.navigateByUrl('/home');
       },
       async () => {
-        const alert = await this.alertCtrl.create({ message: 'Login Failed', buttons: ['OK'] });
+        const alert = await this.alertCtrl.create({ message: 'Credenciales inválidas', buttons: ['OK'] });
         await alert.present();
         loading.dismiss();
       }

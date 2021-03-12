@@ -20,9 +20,9 @@ export class RegistroPage implements OnInit {
   validacionContra: boolean;
   validacionCorreo: boolean;
   information = null;
-  ok:boolean;
-  error:string;
-  mensaje:string;
+  ok: boolean;
+  error: string;
+  mensaje: string;
 
   constructor(
     private alertController: AlertController,
@@ -71,18 +71,16 @@ export class RegistroPage implements OnInit {
   get f() { return this.form.controls; }
 
 
-  async RespuestaBack_Bag() {
-
+  async RespuestaBack_Bag(mensaje: string) {
 
     const alert = await this.alertController.create({
       backdropDismiss: false,
-      message: 'Este correo ya se encuentra registrado',
+      message: mensaje,
       buttons: [
         {
           text: 'OK',
           handler: () => {
             console.log('Buy clicked');
-            //window.location.reload();
             this.form.reset();
           }
         }
@@ -105,7 +103,7 @@ export class RegistroPage implements OnInit {
           handler: () => {
             console.log('Buy clicked');
             //window.location.reload();
-          this.router.navigate(['/login' ]);
+            this.router.navigate(['/login']);
           }
         }
       ]
@@ -151,17 +149,18 @@ export class RegistroPage implements OnInit {
     if (correoValor == true && contrasenaValor == true) {
 
       this.serviceApis.register(this.getAddNewRegistro()).subscribe(result => {
-       console.log(this.error = result["error"]);
-       console.log(this.ok = result["isOK"]);
-       console.log(this.mensaje = result["mensaje"]);
+        console.log(result);
+        console.log(this.error = result["errores"]);
+        console.log(this.ok = result["isOk"]);
+        console.log(this.mensaje = result["mensaje"]);
 
-       if(this.ok){
-        console.log("USUARIO REGISTRADO");
-        this.RespuestaBack_OK();
-       }else if(!this.ok){
-        console.log("USUARIO YA EXISTE");
-        this.RespuestaBack_OK();
-       }
+        if (this.ok) {
+          console.log("USUARIO REGISTRADO");
+          this.RespuestaBack_OK();
+        } else if (!this.ok) {
+
+          this.RespuestaBack_Bag(this.mensaje);
+        }
       });
     }
   }
