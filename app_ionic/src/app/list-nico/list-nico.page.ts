@@ -37,11 +37,14 @@ export class ListNicoPage implements OnInit {
       this.gs.setFracciones(this.fracciones);
     } else {
       this.apiSwaggerService.getFraccionesNicos().then( data => {
+      this.gs.getFraccionesCache().then( data => {
         if(tipobusqueda === 'clave') {
           this.fracciones = data.filter( (item) => item.claveFraccion.includes(clave)).sort();
+          this.fracciones = data.filter( (item) => item.claveFraccion.includes(clave)).sort().slice(0,100);
         }
         else if(tipobusqueda === 'descripcion'){
           this.fracciones = data.filter( (item) => item.descripcion && item.descripcion.toUpperCase().includes(clave.toUpperCase())).sort();
+          this.fracciones = data.filter( (item) => item.descripcion && item.descripcion.toUpperCase().includes(clave.toUpperCase())).sort().slice(0,100);
         }
         this.gs.setFracciones(this.fracciones);
       });

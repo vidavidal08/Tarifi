@@ -80,4 +80,13 @@ export class GlobalStorage {
     const itemToReturn = JSON.parse(itemStrginValue) as T;
     return itemToReturn;
   }
+  public setFraccionesCache(data: Fraccion[]): void {
+    this.setData(data, catalogs.fraccionesCache);
+  }
+  public getFraccionesCache(): Promise<Array<Fraccion>> {
+    return new Promise<Array<Fraccion>>( (resolve, reject) => {
+      const data = this.getDataSync<Array<Fraccion>>(catalogs.fraccionesCache);
+      resolve(data);
+    });
+  }
 }
