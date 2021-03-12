@@ -52,18 +52,14 @@ export class LoginPage  implements OnInit{
         Validators.minLength(5),
       ]),
     });
-<<<<<<< HEAD
-    this.form.controls.username.setValue('');
-    this.form.controls.password.setValue('');
-=======
-    this.form.controls.username.setValue('rafael.ceballos@xibalbalabs.com');
-    this.form.controls.password.setValue('tipo1234');
+
+
     this.apiSwaggerService.getFraccionesNicos()
     .then( data => {
       console.log(data);
       this.globalStorage.setFraccionesCache(data);
     });
->>>>>>> 43fe5f039b6d6b865667a49d7a312afacf495aaf
+
   }
 
   // convenience getter for easy access to form fields
