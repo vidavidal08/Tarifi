@@ -20,9 +20,9 @@ export class AuthService {
     return this.http.post(`${this.url}register`, user);
   }
 
-  login(credentials: Login): Observable<string> {
+  login(credentials: Login): Observable<Login> {
     console.log(credentials);
-    return this.http.post<{ token: string }>(`${this.url}login`, credentials).pipe(
-      map(response => response.token));
+    return this.http.post<Login>(`${this.url}login`, credentials).pipe(
+      map(response => response));
   }
 }

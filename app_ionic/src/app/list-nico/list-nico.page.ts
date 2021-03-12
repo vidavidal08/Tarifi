@@ -41,7 +41,7 @@ export class ListNicoPage implements OnInit {
           this.fracciones = data.filter( (item) => item.claveFraccion.includes(clave)).sort();
         }
         else if(tipobusqueda === 'descripcion'){
-          this.fracciones = data.filter( (item) => item.descripcion && item.descripcion.includes(clave)).sort();
+          this.fracciones = data.filter( (item) => item.descripcion && item.descripcion.toUpperCase().includes(clave.toUpperCase())).sort();
         }
         this.gs.setFracciones(this.fracciones);
       });

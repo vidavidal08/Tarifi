@@ -7,11 +7,13 @@
     </ion-header>
     <ion-content>
       <ion-list>
-        <ion-item [routerLink]="['/home']"><ion-icon name="home-outline"></ion-icon> Inicio</ion-item>
-        <ion-item [routerLink]="['/consulta']"><ion-icon name="search-circle-outline"></ion-icon> Consulta por clave</ion-item>
-        <ion-item [routerLink]="['/consuldescrip']"><ion-icon name="search-outline"></ion-icon> Consulta por descripción</ion-item>
-        <ion-item [routerLink]="['/list-nico', 'top10', 'top10']"><ion-icon name="albums-outline"></ion-icon> Mis Nicos</ion-item>
-        <ion-item (click)="logout()" ><ion-icon name="close-outline"></ion-icon> Cerrar sesión</ion-item>
+        <ion-menu-toggle auto-hide="true" >
+          <ion-item menuClose [routerLink]="['/home']"><ion-icon name="home-outline"></ion-icon> Inicio</ion-item>
+          <ion-item menuClose [routerLink]="['/consulta']"><ion-icon name="search-circle-outline"></ion-icon> Consulta por clave</ion-item>
+          <ion-item menuClose [routerLink]="['/consuldescrip']"><ion-icon name="search-outline"></ion-icon> Consulta por descripción</ion-item>
+          <ion-item menuClose [routerLink]="['/list-nico', 'top10', 'top10']"><ion-icon name="albums-outline"></ion-icon> Mis Nicos</ion-item>
+          <ion-item menuClose (click)="logout()" ><ion-icon name="close-outline"></ion-icon> Cerrar sesión</ion-item>
+        </ion-menu-toggle>
       </ion-list>
     </ion-content>
   </ion-menu>

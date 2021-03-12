@@ -82,6 +82,7 @@ export class LoginPage  implements OnInit{
    await loading.present();
    const userToIn: Login = {
     email: this.f.username.value,
+    nombre: '',
     password: this.f.password.value,
     token: ''
     };
@@ -89,8 +90,9 @@ export class LoginPage  implements OnInit{
       async token => {
         const userLogedIn: Login = {
           email: this.f.username.value,
+          nombre: token.nombre,
           password: this.f.password.value,
-          token: token
+          token: token.token
         };
         this.globalStorage.setUserLogin(userLogedIn).then();
         loading.dismiss();
