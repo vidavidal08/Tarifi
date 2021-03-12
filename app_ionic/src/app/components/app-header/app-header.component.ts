@@ -10,6 +10,7 @@ import { GlobalStorage } from "src/app/services/global-storage.service";
 export class AppHeader implements OnInit {
   public usuario: Login = {
     email: '',
+    nombre: '',
     password: '',
     token: ''
     };
