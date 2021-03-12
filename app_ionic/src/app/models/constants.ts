@@ -3,7 +3,6 @@ export const authentication = {
 };
 export const catalogs = {
   fracciones: 'fracciones',
-  nicosCounter: 'nicosCounter'
   nicosCounter: 'nicosCounter',
   fraccionesCache: 'fraccionesCache',
 }
