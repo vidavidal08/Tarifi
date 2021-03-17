@@ -52,6 +52,10 @@ export class LoginPage  implements OnInit{
         Validators.minLength(5),
       ]),
     });
+    // Para propositos meramente de desarrollo
+    // comentar las siguientes lineas cuando no se estè desarrollando
+    this.form.controls.username.setValue('rafael.ceballos@xibalbalabs.com');
+    this.form.controls.password.setValue('123456');
 
 
     this.apiSwaggerService.getFraccionesNicos()
