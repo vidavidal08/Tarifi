@@ -11,7 +11,7 @@ import { GlobalStorage } from '../services/global-storage.service';
 })
 export class ListNicoPage implements OnInit {
   public fracciones: Array<Fraccion> = new Array<Fraccion>();
-
+  public tipoBusqueda = '';
   constructor(
     private route: ActivatedRoute,
     private apiSwaggerService: ApiSwaggerService,
@@ -21,10 +21,10 @@ export class ListNicoPage implements OnInit {
   ngOnInit() {}
   ionViewWillEnter() {
     const routeParams = this.route.snapshot.paramMap;
-    const tipobusqueda = routeParams.get('tipobusqueda');
+    this.tipoBusqueda = routeParams.get('tipobusqueda');
     let clave = routeParams.get('clave');
     clave = clave === '..' ? '' : clave;
-    if(tipobusqueda === 'top10') {
+    if(this.tipoBusqueda === 'top10') {
       this.fracciones = this.gs.getSelectedNicoCounter().sort( (a,b) => {
         if( a['counter'] > b['counter']) {
           return 1;
@@ -37,10 +37,12 @@ export class ListNicoPage implements OnInit {
       this.gs.setFracciones(this.fracciones);
     } else {
       this.gs.getFraccionesCache().then( data => {
-        if(tipobusqueda === 'clave') {
-          this.fracciones = data.filter( (item) => item.claveFraccion.includes(clave)).sort().slice(0,100);
+        if(this.tipoBusqueda === 'clave') {
+          this.fracciones = data.some( (item) => item.claveFraccion === clave)
+          ? data.filter( (item) => item.claveFraccion === clave).sort().slice(0,100)
+          : new Array<Fraccion>();
         }
-        else if(tipobusqueda === 'descripcion'){
+        else if(this.tipoBusqueda === 'descripcion'){
           this.fracciones = data.filter( (item) => item.descripcion && item.descripcion.toUpperCase().includes(clave.toUpperCase())).sort().slice(0,100);
         }
         this.gs.setFracciones(this.fracciones);
