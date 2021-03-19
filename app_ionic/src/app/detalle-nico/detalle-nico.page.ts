@@ -8,7 +8,7 @@ import { GlobalStorage } from '../services/global-storage.service';
   templateUrl: './detalle-nico.page.html',
   styleUrls: ['./detalle-nico.page.scss'],
 })
-export class DetalleNicoPage implements OnInit {
+export class DetalleNicoPage {
   public fraccion: Fraccion = {
     id: '',
     claveFraccion:'',
@@ -22,14 +22,14 @@ export class DetalleNicoPage implements OnInit {
     private gs: GlobalStorage,
     private route: ActivatedRoute) { }
 
-  ngOnInit() {
+    ionViewWillEnter() {
     const routeParams = this.route.snapshot.paramMap;
     const id = routeParams.get('id');
     this.gs.getFracciones()
     .then(fracciones => {
       this.fraccion = fracciones.find( item => item.id === id);
       this.gs.setSelectedNicoCounter(this.fraccion);
+      console.log(this.fraccion);
     });
   }
-
 }

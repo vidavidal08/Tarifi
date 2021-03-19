@@ -1,20 +1,15 @@
 <app-header-text [text]="'Consultas'"></app-header-text>
 <ion-content>
-
-
-
 <div class="fondo-div">
   <label class="form-control">Fracción arancelaria: {{ fraccion.claveFraccion}} </label><br>
   <label class="form-control">Descripción: {{fraccion.descripcion}}</label><br>
 </div>
-<ion-item>
-  <ion-textarea placeholder="Esto desplegara información del nico">
-    ige: {{fraccion.ige}}
-    igi: {{fraccion.igi}}
-    unidad de medida: {{fraccion.unidadMedida}}
-    nicos: nada
-  </ion-textarea>
-</ion-item>
-
-
+<div *ngFor="let item of fraccion.nicos" >
+  <ion-item>
+    Clave Nico: {{item.claveNICO}}
+  </ion-item>
+  <ion-item>
+    Descripción: {{item.descripcion}}
+  </ion-item>
+</div>
 </ion-content>
