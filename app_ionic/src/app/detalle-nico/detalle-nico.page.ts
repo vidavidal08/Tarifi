@@ -1,5 +1,5 @@
 import { Fraccion } from './../models/fraccion';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { GlobalStorage } from '../services/global-storage.service';
 
@@ -9,6 +9,10 @@ import { GlobalStorage } from '../services/global-storage.service';
   styleUrls: ['./detalle-nico.page.scss'],
 })
 export class DetalleNicoPage implements OnInit {
+  @Input () anteriorNICOClave;
+  @Input () anteriorNICODescri;
+   descripcionNICO = "prueba";
+
   public fraccion: Fraccion = {
     id: '',
     claveFraccion:'',
@@ -16,8 +20,11 @@ export class DetalleNicoPage implements OnInit {
     unidadMedida:	'',
     igi: '',
     ige: '',
-    nicos: []
+    nicos: [],
+
   };
+
+  
   constructor(
     private gs: GlobalStorage,
     private route: ActivatedRoute) { }
@@ -29,7 +36,10 @@ export class DetalleNicoPage implements OnInit {
     .then(fracciones => {
       this.fraccion = fracciones.find( item => item.id === id);
       this.gs.setSelectedNicoCounter(this.fraccion);
+      console.log(this.fraccion);
     });
   }
+
+
 
 }
