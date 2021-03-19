@@ -10,6 +10,9 @@ import { GlobalStorage } from '../services/global-storage.service';
   styleUrls: ['./list-nico.page.scss'],
 })
 export class ListNicoPage implements OnInit {
+  padreClaveNICO ="";
+  padreDescripNICO="";
+
   public fracciones: Array<Fraccion> = new Array<Fraccion>();
   public tipoBusqueda = '';
   constructor(
@@ -19,6 +22,12 @@ export class ListNicoPage implements OnInit {
   ) { }
 
   ngOnInit() {}
+
+  pasarVariables(clave:string, descripcNICO:string){
+    this.padreClaveNICO = clave;
+    this.padreDescripNICO = descripcNICO;
+    console.log(clave,descripcNICO );
+    }
   ionViewWillEnter() {
     const routeParams = this.route.snapshot.paramMap;
     this.tipoBusqueda = routeParams.get('tipobusqueda');

@@ -1,5 +1,5 @@
 import { Fraccion } from './../models/fraccion';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { GlobalStorage } from '../services/global-storage.service';
 
@@ -16,8 +16,11 @@ export class DetalleNicoPage {
     unidadMedida:	'',
     igi: '',
     ige: '',
-    nicos: []
+    nicos: [],
+
   };
+
+
   constructor(
     private gs: GlobalStorage,
     private route: ActivatedRoute) { }

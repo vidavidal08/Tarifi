@@ -7,3 +7,5 @@ export interface Fraccion {
   ige: string;
   nicos: string[];
   }
+
+  
