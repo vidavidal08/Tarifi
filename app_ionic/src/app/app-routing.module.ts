@@ -36,7 +36,7 @@ const routes: Routes = [
     canActivate: [AuthGuardService]
   },
   {
-    path: 'detalle-nico/:id',
+    path: 'detalle-nico/:id/:claveNico',
     loadChildren: () => import('./detalle-nico/detalle-nico.module').then( m => m.DetalleNicoPageModule),
     canActivate: [AuthGuardService]
   },
