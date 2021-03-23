@@ -10,6 +10,7 @@ export class HomeConsultaPage implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    
   }
 
 }

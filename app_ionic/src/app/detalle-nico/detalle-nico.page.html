@@ -1,13 +1,28 @@
 <app-header-text [text]="'Consultas'"></app-header-text>
 <ion-content>
 <div class="fondo-div">
-  <label class="form-control">Fracción arancelaria: {{ fraccion.claveFraccion}} </label><br>
-  <label class="form-control">Descripción : {{fraccion.descripcion}}</label><br>
+  <label class="form-control">Fracción arancelaria: </label> {{ fraccion.claveFraccion}}<br>
+  <label class="form-control">Descripción:</label> {{fraccion.descripcion}}<br>
 </div>
-  <ion-item>
-    Clave Nico: {{selectedNico.claveNICO}}
+  <ion-item style="font-size: 20px;">
+    <b> Nico:</b> {{selectedNico.claveNICO}}
   </ion-item>
-  <ion-item>
-    Descripción: {{selectedNico.descripcion}}
+  <div style="font-size: 20px;margin-left: 13px;margin-top: 6px;border-bottom: 2px  #e1e1f5;">
+    <b>Descripción:</b> <br>{{selectedNico.descripcion}}
+  </div>
+
+  <ion-item style="font-size: 20px;">
+    <b>ige</b>:{{fraccion.ige}}
   </ion-item>
+
+  <ion-item style="font-size: 20px;">
+    <b>igi:</b>{{fraccion.ige}}
+  </ion-item>
+
+  <ion-item style="font-size: 20px;">
+    <b>Unidad de medida:</b>{{fraccion.unidadMedida}}
+  </ion-item>
+  <div style="text-align: center;">
+  <img src="assets/logo.png" style="width: 25%;margin-top: 50px;">
+  </div>
 </ion-content>

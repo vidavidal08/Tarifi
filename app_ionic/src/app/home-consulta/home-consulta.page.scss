@@ -36,8 +36,25 @@
   .new-background-color{
     --background: #ffbd59;
   }
+  .btn-redondo{
+    -webkit-box-shadow: 18px 15px 6px 0px rgba(255,217,0,1);
+    -moz-box-shadow: 18px 15px 6px 0px rgba(255,217,0,1);
+    box-shadow: 18px 15px 6px 0px rgba(255,217,0,1);
+  }
+  .gradiente {
+    background: linear-gradient(rgb(255, 208, 0), orange);
+    border-radius: 128px 128px 128px 128px;
+    -moz-border-radius: 128px 128px 128px 128px;
+    -webkit-border-radius: 128px 128px 128px 128px;
+    color:white;
+    border: 5px solid #989292;
+  
+  }
+  .btn1{
+    margin-top: 150px;
+    margin-bottom: 80px;
+  }
 
-  .btn-registrarse{
-    background-color: #b1aeae;
-    color: white;
-}
+  .btn2{
+    margin-bottom: 190px;
+  }

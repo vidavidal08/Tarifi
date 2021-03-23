@@ -21,7 +21,7 @@ export class DetalleNicoPage implements OnInit {
   public selectedNico: {
     claveNICO: string,
     descripcion: string
-  };;
+  };
 
   constructor(
     private gs: GlobalStorage,
