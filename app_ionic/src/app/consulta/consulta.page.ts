@@ -11,11 +11,24 @@ export class ConsultaPage implements OnInit {
   public parte2: string = '';
   public parte3: string = '';
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
+
+
   public get clave(): string {
-    return this.parte1 + '.' + this.parte2 + '.' + this.parte3;
+
+    if (this.parte1 !== '' && this.parte2 === '' && this.parte3 === '') {
+      return this.parte1;
+    } else if (this.parte1 !== '' && this.parte2 !== '' && this.parte3 === '') {
+      return this.parte1 + '.' + this.parte2;
+    } else if (this.parte1 !== '' && this.parte2 !== '' && this.parte3 !== '') {
+      return this.parte1 + '.' + this.parte2 + '.' + this.parte3;
+    } else if (this.parte1 === '' && this.parte2 === '' && this.parte3 === '') {
+      return ' ';
+    } else {
+      return ' ';
+    }
+
   }
 }
