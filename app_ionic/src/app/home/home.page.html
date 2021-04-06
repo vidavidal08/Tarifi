@@ -1,31 +1,46 @@
 <app-header></app-header>
 <ion-content>
   <div class="container ion-text-center">
-    <div class="row" style="margin-top: 15%;">
-    <img src="assets/buscar_nico.png"
-     style="width: 20%;
-    float: left;
-    margin-left: 15%;
-    ">   <ion-button fill="outline" class="btn-iniciar" color="warning" style="margin-top: 5%;margin-bottom: 5%;"
-    [routerLink]="['/home-consulta']"
-    >Consulta</ion-button>
-  </div>
-    <img src="assets/logo.png" class="img-logo" style="opacity: 0.4;  width: 46%;">
-    <div class="row" style="margin-top: 15%;">
-       <ion-button fill="outline" class="btn-iniciar" color="warning" style="margin-top: 5%;margin-bottom: 5%;"
-       [routerLink]="['/list-nico', 'top10', 'top10']"
-      >Mis NICO´s</ion-button>
-      <img src="assets/iconoAgenda.png"
-      style="width: 20%;
-     float: right;
-     margin-right: 15%;
-     ">
+
+    <div style="margin-top: 15%;">
+      <h1>Consultar</h1>
     </div>
+
+    <div class="row" style="margin-top: 5%;">
+
+    <div  class="gradiente btn1" style="float: left;
+    margin-left: 5%; width: 40%"
+     [routerLink]="['/consuldescrip']"
+    >Descripción</div>
+
+    <div   class="gradiente btn1" style="float: right;
+    margin-right: 5%; width: 40%"
+
+[routerLink]="['/consulta']"
+    >Fracción</div>
+
+    </div >
+
+    <div style="margin-top: 15%;">
+      <img src="assets/logo.png" class="img-logo" style="opacity: 0.4;  width: 46%;">
+    </div>
+
+
+    <div class="row" style="margin-top:15%;">
+
+      <div class="gradiente btn1" style="width: 60%; margin: 0 auto;"
+
+   [routerLink]="['/list-nico', 'top10', 'top10']"
+      >Mis nicos</div>
+
+    </div>
+
+
 
   </div>
 
   <ion-footer style="
-  margin-top: 10%;
+  margin-top: 20%;
 ">
     <ion-toolbar>
       <ion-title>Footer</ion-title>
