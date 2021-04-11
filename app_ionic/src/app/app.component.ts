@@ -21,7 +21,7 @@ export class AppComponent {
 
   initializeApp(){
   this.platform.ready().then(() => {
-    this.router.navigateByUrl('splash');
+    // this.router.navigateByUrl('splash');
     this.gs.authentication().subscribe( item => {
       this.showMenu = !!item;
     });
