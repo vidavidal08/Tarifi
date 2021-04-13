@@ -1,4 +1,4 @@
-import { AppHeader } from './app-header/app-header.component';
+//import { AppHeader } from './app-header/app-header.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
@@ -12,6 +12,6 @@ import { AppHeaderText } from './app-header-text/app-header-text.component';
     FormsModule,
     IonicModule,
   ],
-  exports: [AppHeader, AppHeaderText]
+  exports: [AppHeaderText]
 })
 export class SharedModule {}
