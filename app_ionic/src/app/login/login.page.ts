@@ -15,7 +15,17 @@ import { GlobalStorage } from '../services/global-storage.service';
 })
 export class LoginPage  implements OnInit{
 
-  form: FormGroup;
+  form: FormGroup = new FormGroup({
+    username: new FormControl('', [
+      Validators.required,
+      Validators.minLength(5),
+    ]),
+    password: new FormControl('', [
+      Validators.required,
+      Validators.minLength(5),
+    ]),
+  });
+
   loading = false;
   submitted = false;
 
