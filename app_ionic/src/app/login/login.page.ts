@@ -32,7 +32,20 @@ export class LoginPage  implements OnInit{
   ) { }
 
 
-  get f() { return this.form.controls; }
+  get f() { if(!this.form) {
+    this.form = new FormGroup({
+      username: new FormControl('', [
+        Validators.required,
+        Validators.minLength(5),
+      ]),
+      password: new FormControl('', [
+        Validators.required,
+        Validators.minLength(5),
+      ]),
+    });
+  };
+  return this.form.controls;
+ }
 
   ngOnInit(): void {
     if(this.globalStorage.isAuthenticated()) {
@@ -65,7 +78,36 @@ export class LoginPage  implements OnInit{
     });
 
   }
+  ionViewWillEnter() {
+    if(this.globalStorage.isAuthenticated()) {
+      console.log('authenticated');
+      this.router.navigateByUrl('/home');
+      return;
+    };
+     //this.form.reset();
 
+    this.form = new FormGroup({
+      username: new FormControl('', [
+        Validators.required,
+        Validators.minLength(5),
+      ]),
+      password: new FormControl('', [
+        Validators.required,
+        Validators.minLength(5),
+      ]),
+    });
+    // Para propositos meramente de desarrollo
+    // comentar las siguientes lineas cuando no se estè desarrollando
+    // this.form.controls.username.setValue('rafael.ceballos@xibalbalabs.com');
+    // this.form.controls.password.setValue('123456');
+
+
+    this.apiSwaggerService.getFraccionesNicos()
+    .then( data => {
+      console.log(data);
+      this.globalStorage.setFraccionesCache(data);
+    });
+  }
   // convenience getter for easy access to form fields
 
 
