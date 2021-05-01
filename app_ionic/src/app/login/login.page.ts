@@ -13,7 +13,7 @@ import { GlobalStorage } from '../services/global-storage.service';
   templateUrl: './login.page.html',
   styleUrls: ['./login.page.scss'],
 })
-export class LoginPage  implements OnInit{
+export class LoginPage implements OnInit {
 
   form: FormGroup = new FormGroup({
     username: new FormControl('', [
@@ -42,28 +42,28 @@ export class LoginPage  implements OnInit{
   ) { }
 
 
-  get f() { if(!this.form) {
-    this.form = new FormGroup({
-      username: new FormControl('', [
-        Validators.required,
-        Validators.minLength(5),
-      ]),
-      password: new FormControl('', [
-        Validators.required,
-        Validators.minLength(5),
-      ]),
-    });
-  };
-  return this.form.controls;
- }
+  get f() {
+    if (!this.form) {
+      this.form = new FormGroup({
+        username: new FormControl('', [
+          Validators.required,
+          Validators.minLength(5),
+        ]),
+        password: new FormControl('', [
+          Validators.required,
+          Validators.minLength(5),
+        ]),
+      });
+    };
+    return this.form.controls;
+  }
 
   ngOnInit(): void {
-    if(this.globalStorage.isAuthenticated()) {
+    if (this.globalStorage.isAuthenticated()) {
       console.log('authenticated');
       this.router.navigateByUrl('/home');
       return;
     };
-     //this.form.reset();
 
     this.form = new FormGroup({
       username: new FormControl('', [
@@ -74,27 +74,16 @@ export class LoginPage  implements OnInit{
         Validators.required,
         Validators.minLength(5),
       ]),
-    });
-    // Para propositos meramente de desarrollo
-    // comentar las siguientes lineas cuando no se estè desarrollando
-    // this.form.controls.username.setValue('rafael.ceballos@xibalbalabs.com');
-    // this.form.controls.password.setValue('123456');
-
-
-    this.apiSwaggerService.getFraccionesNicos()
-    .then( data => {
-      console.log(data);
-      this.globalStorage.setFraccionesCache(data);
     });
 
   }
   ionViewWillEnter() {
-    if(this.globalStorage.isAuthenticated()) {
+    if (this.globalStorage.isAuthenticated()) {
       console.log('authenticated');
       this.router.navigateByUrl('/home');
       return;
     };
-     //this.form.reset();
+    //this.form.reset();
 
     this.form = new FormGroup({
       username: new FormControl('', [
@@ -111,44 +100,38 @@ export class LoginPage  implements OnInit{
     // this.form.controls.username.setValue('rafael.ceballos@xibalbalabs.com');
     // this.form.controls.password.setValue('123456');
 
-
-    this.apiSwaggerService.getFraccionesNicos()
-    .then( data => {
-      console.log(data);
-      this.globalStorage.setFraccionesCache(data);
-    });
+    // Estas lineas carcaban la cache de nicos
+    // this.apiSwaggerService.getFraccionesNicos()
+    //   .then(data => {
+    //     this.globalStorage.setFraccionesCache(data);
+    //   });
   }
   // convenience getter for easy access to form fields
 
 
-  async RespuestaBack(){
+  async RespuestaBack() {
 
 
     const alert = await this.alertController.create({
-     cssClass: 'my-custom-class',
-     header: 'Acceso denegado',
-     subHeader: 'Usuario o contraseña incorrecta',
-     message: 'Intente nuevamente',
-     buttons: ['OK']
-   });
+      cssClass: 'my-custom-class',
+      header: 'Acceso denegado',
+      subHeader: 'Usuario o contraseña incorrecta',
+      message: 'Intente nuevamente',
+      buttons: ['OK']
+    });
 
-   await alert.present();
+    await alert.present();
 
-}
+  }
 
- async onSubmit() {
-
-  console.log(this.f.username.value,this.f.password.value);
-
-  //this.RespuestaBack();
-   //console.log(this.form.value);
-   const loading = await this.loadingCtrl.create({ message: 'Logging in ...' });
-   await loading.present();
-   const userToIn: Login = {
-    email: this.f.username.value,
-    nombre: '',
-    password: this.f.password.value,
-    token: ''
+  async onSubmit() {
+    const loading = await this.loadingCtrl.create({ message: 'Logging in ...' });
+    await loading.present();
+    const userToIn: Login = {
+      email: this.f.username.value,
+      nombre: '',
+      password: this.f.password.value,
+      token: ''
     };
     this.authService.login(userToIn).subscribe(
       async token => {
