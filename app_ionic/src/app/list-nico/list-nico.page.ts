@@ -49,17 +49,33 @@ export class ListNicoPage implements OnInit {
         }).slice(0,10);
         this.gs.setFracciones(this.fracciones);
       } else {
-        this.gs.getFraccionesCache().then( data => {
-          if(this.tipoBusqueda === 'clave') {
-            this.fracciones = data.some( (item) =>item.claveFraccion &&  item.claveFraccion.includes(clave))
-            ? data.filter( (item) => item.claveFraccion  &&  item.claveFraccion.includes(clave)).sort().slice(0,100)
-            : new Array<Fraccion>();
-          }
-          else if(this.tipoBusqueda === 'descripcion'){
-            this.fracciones = data.filter( (item) => item.descripcion && item.descripcion.toUpperCase().includes(clave.toUpperCase())).sort().slice(0,100);
-          }
-          this.gs.setFracciones(this.fracciones);
-        });
+
+        if(this.tipoBusqueda === 'clave'){
+          this.apiSwaggerService.getFraccionesNicoFiltradas(clave, '').then(data => {
+            this.fracciones = data;
+            this.gs.setFracciones(this.fracciones);
+          });
+        } else {
+          this.apiSwaggerService.getFraccionesNicoFiltradas('', clave).then(data => {
+            this.fracciones = data;
+            this.gs.setFracciones(this.fracciones);
+          });
+        }
+
+        /// <---
+        // this.gs.getFraccionesCache().then( data => {
+        //   if(this.tipoBusqueda === 'clave') {
+        //     this.fracciones = data.some( (item) =>item.claveFraccion &&  item.claveFraccion.includes(clave))
+        //     ? data.filter( (item) => item.claveFraccion  &&  item.claveFraccion.includes(clave)).sort().slice(0,100)
+        //     : new Array<Fraccion>();
+        //   }
+        //   else if(this.tipoBusqueda === 'descripcion'){
+        //     this.fracciones = data.filter( (item) => item.descripcion && item.descripcion.toUpperCase().includes(clave.toUpperCase())).sort().slice(0,100);
+        //   }
+        //   this.gs.setFracciones(this.fracciones);
+        // });
+
+        /// --->
       }
     }
 }

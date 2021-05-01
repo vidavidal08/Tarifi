@@ -37,4 +37,12 @@ export class ApiSwaggerService {
   public getFraccionesNicos(): Promise<Array<Fraccion>> {
     return this.http.get<Array<Fraccion>>(this.url+'Fraccion',{}).toPromise();
   }
+  public getFraccionesNicoFiltradas(claveArancelaria: string, descripcion: string): Promise<Array<Fraccion>> {
+    return this.http.get<Array<Fraccion>>(this.url+'Fraccion/filtro', {
+      params: { 
+        'ClaveArancelaria': claveArancelaria, 
+        'Descripcion': descripcion
+      }
+    }).toPromise();
+  }
 }
