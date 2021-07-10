@@ -83,12 +83,12 @@ namespace NicosApp.Core.Feactures.Seguridad.Commands.Login
             }
 
 
-            if (!await _userManager.IsEmailConfirmedAsync(usuario))
-            {
-                string mensaje = "Debe tener un correo electrónico confirmado para iniciar sesión.";
+            //if (!await _userManager.IsEmailConfirmedAsync(usuario))
+            //{
+            //    string mensaje = "Debe tener un correo electrónico confirmado para iniciar sesión.";
 
-                throw new UnauthorizedExeption(mensaje);
-            }
+            //    throw new UnauthorizedExeption(mensaje);
+            //}
 
 
 
@@ -117,8 +117,10 @@ namespace NicosApp.Core.Feactures.Seguridad.Commands.Login
             {
                 return new TokenDto
                 {
-                   
-                    Token = _jwtGenerador.crearToken(usuario)
+
+                    Token = _jwtGenerador.crearToken(usuario),
+                    Nombre = usuario.Nombre,
+                    Email = usuario.Email
                 };
             }
 

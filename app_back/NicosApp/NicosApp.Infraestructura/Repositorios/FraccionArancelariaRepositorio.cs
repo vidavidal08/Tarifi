@@ -35,7 +35,11 @@ namespace NicosApp.Infraestructura.Repositorios
         /// <returns></returns>
         public async Task<FraccionArancelaria> getAllWhereFraccionArancelaTIGIE(string ClaveFraccion)
         {
-            var nico = await _nicosAppContext.FraccionArancelarias.Include(x => x.Nicos).FirstOrDefaultAsync(x => x.ClaveFraccion == ClaveFraccion);
+
+            var nico = await _nicosAppContext.FraccionArancelarias
+                             .Include(x => x.Nicos)
+                             .FirstOrDefaultAsync(x => x.ClaveFraccion == ClaveFraccion);
+
 
             return nico;
 
@@ -66,26 +70,27 @@ namespace NicosApp.Infraestructura.Repositorios
 
 
 
-
             var fraccionArancelariaQueryable = _nicosAppContext.FraccionArancelarias.AsQueryable();
 
 
 
             if (!string.IsNullOrWhiteSpace(claveFraccion))
             {
-                fraccionArancelariaQueryable = fraccionArancelariaQueryable.Where(x => x.ClaveFraccion.Contains(claveFraccion));
+                fraccionArancelariaQueryable = fraccionArancelariaQueryable.Where(x => x.ClaveFraccion.Trim().Contains(claveFraccion));
             }
-
 
 
             if (!string.IsNullOrWhiteSpace(descripcion))
             {
-                fraccionArancelariaQueryable = fraccionArancelariaQueryable.Where(x => x.ClaveFraccion.Contains(descripcion));
+
+                fraccionArancelariaQueryable = fraccionArancelariaQueryable.Where(x => x.Descripcion.Trim().ToLower().Replace("á", "a").Replace("í", "i").Replace("ó", "o").Contains(descripcion.Replace("á", "a").Replace("í", "i").Replace("ó", "o").Trim().ToLower()));
             }
 
 
+            fraccionArancelariaQueryable = fraccionArancelariaQueryable.Skip(0).Take(100);
 
-            return await fraccionArancelariaQueryable.Include(x => x.Nicos).ToListAsync();
+
+            return await fraccionArancelariaQueryable.Include(x => x.Nicos).Include(x => x.PermisosFraccion).ToListAsync();
 
 
 
@@ -101,7 +106,26 @@ namespace NicosApp.Infraestructura.Repositorios
         public async Task<List<FraccionArancelaria>> getAllWithNicoSub()
         {
             var nico = await _nicosAppContext
-                              .FraccionArancelarias.Include(x => x.Nicos).ToListAsync();
+                               .FraccionArancelarias.Include(x => x.Nicos).Skip(0).Take(100).ToListAsync();
+
+
+
+            return nico;
+        }
+
+
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public async Task<List<FraccionArancelaria>> getAllWithNicoSubAndPermisos()
+        {
+            var nico = await _nicosAppContext
+                              .FraccionArancelarias
+                              .Include(x => x.Nicos)
+                              .Include(x => x.PermisosFraccion) 
+                              .ToListAsync();
 
 
             return nico;

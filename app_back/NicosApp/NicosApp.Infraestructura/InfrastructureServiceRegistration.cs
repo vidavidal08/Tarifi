@@ -70,7 +70,7 @@ namespace NicosApp.Infraestructura
                 options.Password.RequireLowercase = false;
                 options.Password.RequireNonAlphanumeric = false;
                 options.Password.RequireUppercase = false;
-                options.Password.RequiredLength = 6;
+                options.Password.RequiredLength = 1;
                 options.Password.RequiredUniqueChars = 0;
 
                 // User settings.
@@ -81,9 +81,9 @@ namespace NicosApp.Infraestructura
 
 
 
-                options.User.RequireUniqueEmail = true;
+                options.User.RequireUniqueEmail = false;
 
-                options.SignIn.RequireConfirmedEmail = true;
+                options.SignIn.RequireConfirmedEmail = false;
 
             });
 
@@ -96,9 +96,10 @@ namespace NicosApp.Infraestructura
 
 
 
-            services.AddTransient<IFraccionArancelariaRepositorio, FraccionArancelariaRepositorio>();
-            services.AddTransient<INicoRepositorio, NicoRepositorio>();
-            services.AddTransient<IUsuarioRepositorio, UsuarioRepositorio>();
+            services.AddScoped<IFraccionArancelariaRepositorio, FraccionArancelariaRepositorio>();
+            services.AddScoped<INicoRepositorio, NicoRepositorio>();
+            services.AddScoped<IUsuarioRepositorio, UsuarioRepositorio>();
+            services.AddScoped<IPermisoFraccionRepositorio, PermisoFraccionRepositorio>();
 
             services.AddTransient<IJwtGenerador, JwtGenerador>();
 

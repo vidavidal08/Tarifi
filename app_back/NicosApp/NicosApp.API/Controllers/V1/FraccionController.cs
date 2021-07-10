@@ -10,6 +10,8 @@ using NicosApp.Core.Feactures.Fraccion.Queries.GetFraccionArancelariaId;
 using NicosApp.Core.Models;
 using NicosApp.Core.Entidades;
 using Microsoft.AspNetCore.Authorization;
+using NicosApp.Core.Feactures.Fraccion.Commands.CreateCSVFraccionPermisoAcotacion;
+using Microsoft.AspNetCore.Cors;
 
 /// <summary>
 /// Autor: ISC. Magdiel Efrain Palacios Rivera
@@ -20,9 +22,10 @@ namespace NicosApp.API.Controllers
     //[Authorize(AuthenticationSchemes = "Bearer")]
     [RequireHttps]
     [ApiVersion("1.0")]
+    
     public class FraccionController : MiControllerBase
     {
-       
+
         [HttpGet]
         [MapToApiVersion("1.0")]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
@@ -42,7 +45,7 @@ namespace NicosApp.API.Controllers
 
         public async Task<ActionResult<FraccionArancelariaDto>> Get(Guid id)
         {
-            return Ok(await Mediator.Send(new GetFraccionArancelariaIdQuery() { Id = id}));
+            return Ok(await Mediator.Send(new GetFraccionArancelariaIdQuery() { Id = id }));
         }
 
 
@@ -65,7 +68,7 @@ namespace NicosApp.API.Controllers
         [MapToApiVersion("1.0")]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status200OK)]
-        public async Task<ActionResult<GetFraccionArancelariaFiltroDto>> Get(GetFraccionArancelariaFiltro parametros)
+        public async Task<ActionResult<GetFraccionArancelariaFiltroDto>> Get([FromQuery] GetFraccionArancelariaFiltro parametros)
         {
             return Ok(await Mediator.Send(parametros));
         }
@@ -84,6 +87,20 @@ namespace NicosApp.API.Controllers
             await Mediator.Publish(data);
             return NoContent();
         }
+
+
+        [HttpPost("cargarArancelesPermisoAcotacionCSV")]
+        [MapToApiVersion("1.0")]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public async Task<ActionResult<List<FraccionPermisoAcotacionCSV>>> ExportEventsPermisoAcotacion([FromForm] CreateFraccionPermisoAcotacionCSVCommand data)
+        {
+
+            return await Mediator.Send(data);
+
+        }
+
+
 
 
 

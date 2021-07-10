@@ -48,6 +48,7 @@ namespace NicosApp.API.Middleware
                     case UnauthorizedExeption e:
                         response.StatusCode = (int)HttpStatusCode.Unauthorized;
                         break;
+
                     default:
                         // unhandled error
                         response.StatusCode = (int)HttpStatusCode.InternalServerError;

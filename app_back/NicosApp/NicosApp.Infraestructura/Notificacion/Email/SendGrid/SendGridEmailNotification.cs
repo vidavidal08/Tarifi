@@ -27,24 +27,29 @@ namespace NicosApp.Infraestructura.Notificacion.Email.SendGrid
             var client = new SendGridClient(_options.ApiKey);
 
             var subject = emailMessage.Subject;
-           
-           
+
+
 
             var from = new EmailAddress
             {
                 Email = _options.FromAddress,
-                Name = "magefra9"
+                Name = "Tarifi"
             };
 
-            var to = new EmailAddress(emailMessage.Email, "magdiel");
+            var to = new EmailAddress(emailMessage.Email, emailMessage.Email);
 
-            var plainContent = "Hello";
-            var emailBody = emailMessage.Body;
 
-            var sendGridMessage = MailHelper.CreateSingleEmail(from, to, subject, plainContent, emailBody);
+            var htmlContent = emailMessage.Body;
+            var plainTextContent = "";
+
+
+
+            var sendGridMessage = MailHelper.CreateSingleEmail(from, to, subject, plainTextContent, htmlContent);
             var response = await client.SendEmailAsync(sendGridMessage);
 
-          
+
+
+
             if (response.StatusCode == System.Net.HttpStatusCode.Accepted || response.StatusCode == System.Net.HttpStatusCode.OK)
             {
                 bool isok = true;

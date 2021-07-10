@@ -42,6 +42,7 @@ namespace NicosApp.API
             })
                 .AddNewtonsoftJson(options =>
                 {
+
                     //options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
                     //options.SerializerSettings.NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore;
                 })
@@ -124,16 +125,13 @@ namespace NicosApp.API
             services.AddSingleton<ISchemaAcountUrlConfirmEmailService, SchemaAcountUrlConfirmEmailService>();
 
 
-            services.AddCors(opt =>
-            {
-                opt.AddPolicy("CorsRule", rule =>
-                {
-                    rule.AllowAnyHeader().AllowAnyMethod().WithOrigins("*");
-                });
-            });
+            services.AddCors();
+
+
+            //services.AddMvc();
 
             //var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("StrONGKAutHENTICATIONKEy"));
-
+            // services.AddMvc();
 
 
         }
@@ -167,11 +165,21 @@ namespace NicosApp.API
 
             app.UseRouting();
 
-            app.UseCors("CorsRule");
+          //  app.UseCors("CorsRule");
+
+
+            // global cors policy
+            app.UseCors(x => x
+                .AllowAnyMethod()
+                .AllowAnyHeader()
+                .SetIsOriginAllowed(origin => true) // allow any origin
+                .AllowCredentials()); // allow credentials
+
 
             app.UseAuthentication();
             app.UseAuthorization();
 
+            
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();

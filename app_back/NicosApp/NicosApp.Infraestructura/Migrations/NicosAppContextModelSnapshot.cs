@@ -298,6 +298,32 @@ namespace NicosApp.Infraestructura.Migrations
                     b.ToTable("Nicos");
                 });
 
+            modelBuilder.Entity("NicosApp.Core.Entidades.PermisoFraccion", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .HasColumnType("uniqueidentifier")
+                        .HasColumnName("IdPermisoFraccion");
+
+                    b.Property<string>("Acotacion")
+                        .HasMaxLength(5000)
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("Acotacion");
+
+                    b.Property<Guid>("IdFraccionArancelaria")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Permiso")
+                        .HasMaxLength(5000)
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("Permiso");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("IdFraccionArancelaria");
+
+                    b.ToTable("PermisosFraccion");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -360,9 +386,22 @@ namespace NicosApp.Infraestructura.Migrations
                     b.Navigation("FraccionArancelaria");
                 });
 
+            modelBuilder.Entity("NicosApp.Core.Entidades.PermisoFraccion", b =>
+                {
+                    b.HasOne("NicosApp.Core.Entidades.FraccionArancelaria", "FraccionArancelaria")
+                        .WithMany("PermisosFraccion")
+                        .HasForeignKey("IdFraccionArancelaria")
+                        .HasConstraintName("FK_FraccionArancelaria_PermisoFraccion")
+                        .IsRequired();
+
+                    b.Navigation("FraccionArancelaria");
+                });
+
             modelBuilder.Entity("NicosApp.Core.Entidades.FraccionArancelaria", b =>
                 {
                     b.Navigation("Nicos");
+
+                    b.Navigation("PermisosFraccion");
                 });
 #pragma warning restore 612, 618
         }

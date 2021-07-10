@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using NicosApp.Core.Feactures.Seguridad.Commands.ConfirmarEmail;
@@ -24,6 +25,7 @@ namespace NicosApp.API.Controllers
         [MapToApiVersion("1.0")]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status200OK)]
+       
         public async Task<ActionResult<TokenDto>> Login(LoginUsuarioCommand usuario)
         {
             return await Mediator.Send(usuario);

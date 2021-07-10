@@ -1,24 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Proyectos\\NicosApp\\NicosApp.API\\NicosApp.API.csproj": {}
+    "C:\\Proyectos\\TARIFIFI-PRODUCCION\\Tarifi\\app_back\\NicosApp\\NicosApp.API\\NicosApp.API.csproj": {}
   },
   "projects": {
-    "D:\\Proyectos\\NicosApp\\NicosApp.API\\NicosApp.API.csproj": {
+    "C:\\Proyectos\\TARIFIFI-PRODUCCION\\Tarifi\\app_back\\NicosApp\\NicosApp.API\\NicosApp.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Proyectos\\NicosApp\\NicosApp.API\\NicosApp.API.csproj",
+        "projectUniqueName": "C:\\Proyectos\\TARIFIFI-PRODUCCION\\Tarifi\\app_back\\NicosApp\\NicosApp.API\\NicosApp.API.csproj",
         "projectName": "NicosApp.API",
-        "projectPath": "D:\\Proyectos\\NicosApp\\NicosApp.API\\NicosApp.API.csproj",
+        "projectPath": "C:\\Proyectos\\TARIFIFI-PRODUCCION\\Tarifi\\app_back\\NicosApp\\NicosApp.API\\NicosApp.API.csproj",
         "packagesPath": "C:\\Users\\magef\\.nuget\\packages\\",
-        "outputPath": "D:\\Proyectos\\NicosApp\\NicosApp.API\\obj\\",
+        "outputPath": "C:\\Proyectos\\TARIFIFI-PRODUCCION\\Tarifi\\app_back\\NicosApp\\NicosApp.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
           "C:\\Users\\magef\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -31,8 +35,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\Proyectos\\NicosApp\\NicosApp.Infraestructura\\NicosApp.Infraestructura.csproj": {
-                "projectPath": "D:\\Proyectos\\NicosApp\\NicosApp.Infraestructura\\NicosApp.Infraestructura.csproj"
+              "C:\\Proyectos\\TARIFIFI-PRODUCCION\\Tarifi\\app_back\\NicosApp\\NicosApp.Infraestructura\\NicosApp.Infraestructura.csproj": {
+                "projectPath": "C:\\Proyectos\\TARIFIFI-PRODUCCION\\Tarifi\\app_back\\NicosApp\\NicosApp.Infraestructura\\NicosApp.Infraestructura.csproj"
               }
             }
           }
@@ -110,6 +114,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[5.0.5, 5.0.5]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -118,25 +128,29 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200-preview.20614.14\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-preview.5.21302.13\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Proyectos\\NicosApp\\NicosApp.Core\\NicosApp.Core.csproj": {
+    "C:\\Proyectos\\TARIFIFI-PRODUCCION\\Tarifi\\app_back\\NicosApp\\NicosApp.Core\\NicosApp.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Proyectos\\NicosApp\\NicosApp.Core\\NicosApp.Core.csproj",
+        "projectUniqueName": "C:\\Proyectos\\TARIFIFI-PRODUCCION\\Tarifi\\app_back\\NicosApp\\NicosApp.Core\\NicosApp.Core.csproj",
         "projectName": "NicosApp.Core",
-        "projectPath": "D:\\Proyectos\\NicosApp\\NicosApp.Core\\NicosApp.Core.csproj",
+        "projectPath": "C:\\Proyectos\\TARIFIFI-PRODUCCION\\Tarifi\\app_back\\NicosApp\\NicosApp.Core\\NicosApp.Core.csproj",
         "packagesPath": "C:\\Users\\magef\\.nuget\\packages\\",
-        "outputPath": "D:\\Proyectos\\NicosApp\\NicosApp.Core\\obj\\",
+        "outputPath": "C:\\Proyectos\\TARIFIFI-PRODUCCION\\Tarifi\\app_back\\NicosApp\\NicosApp.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
           "C:\\Users\\magef\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -213,25 +227,29 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200-preview.20614.14\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-preview.5.21302.13\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Proyectos\\NicosApp\\NicosApp.Infraestructura\\NicosApp.Infraestructura.csproj": {
+    "C:\\Proyectos\\TARIFIFI-PRODUCCION\\Tarifi\\app_back\\NicosApp\\NicosApp.Infraestructura\\NicosApp.Infraestructura.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Proyectos\\NicosApp\\NicosApp.Infraestructura\\NicosApp.Infraestructura.csproj",
+        "projectUniqueName": "C:\\Proyectos\\TARIFIFI-PRODUCCION\\Tarifi\\app_back\\NicosApp\\NicosApp.Infraestructura\\NicosApp.Infraestructura.csproj",
         "projectName": "NicosApp.Infraestructura",
-        "projectPath": "D:\\Proyectos\\NicosApp\\NicosApp.Infraestructura\\NicosApp.Infraestructura.csproj",
+        "projectPath": "C:\\Proyectos\\TARIFIFI-PRODUCCION\\Tarifi\\app_back\\NicosApp\\NicosApp.Infraestructura\\NicosApp.Infraestructura.csproj",
         "packagesPath": "C:\\Users\\magef\\.nuget\\packages\\",
-        "outputPath": "D:\\Proyectos\\NicosApp\\NicosApp.Infraestructura\\obj\\",
+        "outputPath": "C:\\Proyectos\\TARIFIFI-PRODUCCION\\Tarifi\\app_back\\NicosApp\\NicosApp.Infraestructura\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
           "C:\\Users\\magef\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -244,8 +262,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\Proyectos\\NicosApp\\NicosApp.Core\\NicosApp.Core.csproj": {
-                "projectPath": "D:\\Proyectos\\NicosApp\\NicosApp.Core\\NicosApp.Core.csproj"
+              "C:\\Proyectos\\TARIFIFI-PRODUCCION\\Tarifi\\app_back\\NicosApp\\NicosApp.Core\\NicosApp.Core.csproj": {
+                "projectPath": "C:\\Proyectos\\TARIFIFI-PRODUCCION\\Tarifi\\app_back\\NicosApp\\NicosApp.Core\\NicosApp.Core.csproj"
               }
             }
           }
@@ -324,7 +342,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200-preview.20614.14\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-preview.5.21302.13\\RuntimeIdentifierGraph.json"
         }
       }
     }

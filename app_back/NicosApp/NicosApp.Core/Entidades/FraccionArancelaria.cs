@@ -49,6 +49,14 @@ namespace NicosApp.Core.Entidades
         public string IGE { get; set; }
 
 
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public virtual ICollection<PermisoFraccion> PermisosFraccion { get; set; }
+
+
+
         /// <summary>
         /// 
         /// </summary>

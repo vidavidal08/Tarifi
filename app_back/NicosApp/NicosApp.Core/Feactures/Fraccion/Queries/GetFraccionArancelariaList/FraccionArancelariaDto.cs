@@ -1,4 +1,5 @@
-﻿using NicosApp.Core.Feactures.Fraccion.Queries.GetFraccionArancelariaList;
+﻿using NicosApp.Core.Dtos;
+using NicosApp.Core.Feactures.Fraccion.Queries.GetFraccionArancelariaList;
 using System;
 using System.Collections.Generic;
 
@@ -41,6 +42,14 @@ namespace NicosApp.Core.Feactures.Fraccion.Querys.GetNicoList
         /// 
         /// </summary>
         public string IGE { get; set; }
+
+
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public virtual ICollection<PermisoFraccionDto> Permisos { get; set; }
+
 
 
         /// <summary>

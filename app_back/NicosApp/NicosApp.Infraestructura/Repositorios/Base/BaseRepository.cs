@@ -61,7 +61,7 @@ namespace NicosApp.Infraestructura.Repositorios.Base
         public IQueryable<T> GetAll()
         {
 
-         
+
             return _entities.AsQueryable();
         }
 
@@ -98,10 +98,12 @@ namespace NicosApp.Infraestructura.Repositorios.Base
         /// </summary>
         /// <param name="entity"></param>
         /// <returns></returns>
-        public void Update(T entity)
+        public async Task Update(T entity)
         {
             _nicosAppContext.Entry<T>(entity).State = EntityState.Modified;
-            _nicosAppContext.Update(entity);
+
+            //_nicosAppContext.Update(entity);
+            await _nicosAppContext.SaveChangesAsync();
         }
 
 

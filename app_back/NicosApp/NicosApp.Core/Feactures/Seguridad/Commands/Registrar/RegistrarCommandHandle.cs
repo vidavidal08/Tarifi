@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Identity;
 using NicosApp.Core.Entidades;
 using NicosApp.Core.Excepciones;
+using NicosApp.Core.Helpers;
 using NicosApp.Core.Interfaces.Identity;
 using NicosApp.Core.Interfaces.Notificacion.Email;
 using NicosApp.Core.Interfaces.Repositorios;
@@ -105,7 +106,7 @@ namespace NicosApp.Core.Feactures.Seguridad.Commands.Registrar
                 //    throw new ManejadorExcepcion(System.Net.HttpStatusCode.BadRequest,
                 //                         ex.Message);
                 //}
-                
+
 
 
 
@@ -115,12 +116,12 @@ namespace NicosApp.Core.Feactures.Seguridad.Commands.Registrar
 
 
 
-                //string value = "Confirme su cuenta haciendo clic en este enlace: <a href=\"" + callbackLink + "\">link</a>";
+                ////string value = "Confirme su cuenta haciendo clic en este enlace: <a href=\"" + callbackLink + "\">link</a>";
 
                 //var mensaje = new EmailMessage()
                 //{
                 //    Email = usuario.Email,
-                //    Body = value,
+                //    Body = callbackLink,
                 //    Subject = "Confirmar cuenta"
 
                 //};
@@ -136,10 +137,31 @@ namespace NicosApp.Core.Feactures.Seguridad.Commands.Registrar
                 //    throw new ManejadorExcepcion(System.Net.HttpStatusCode.BadRequest,
                 //                           ex.Message);
                 //}
-              
 
 
-                return Result.Success("Por favor de confirmar su cuenta por correo");
+                var mensaje = new EmailMessage()
+                {
+                    Email = request.Email,
+                    Body = PlantillaEmail.crearPlantilla(request.Nombre, request.Apellidos, request.Email, request.Password),
+                    Subject = "Registro completado"
+
+                };
+
+
+                try
+                {
+                    await _emailNotification.Send(mensaje);
+                }
+                catch (System.Exception ex)
+                {
+
+                    throw new ManejadorExcepcion(System.Net.HttpStatusCode.BadRequest,
+                                           ex.Message);
+                }
+
+
+
+                return Result.Success("Usuario registrado correctamente");
 
             }
 

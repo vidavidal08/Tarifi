@@ -39,7 +39,9 @@ namespace NicosApp.Infraestructura.Persistencia.Configuraciones
 
             builder.Property(e => e.Descripcion)
             .HasColumnName("Descripcion")
-            .HasMaxLength(1000);
+            .HasMaxLength(3000);
+
+
 
 
             builder.Property(e => e.UnidadMedida)
@@ -57,6 +59,7 @@ namespace NicosApp.Infraestructura.Persistencia.Configuraciones
             builder.Property(e => e.IGE)
            .HasColumnName("IGE")
            .HasMaxLength(50);
+
 
 
 

@@ -6,6 +6,9 @@ using NicosApp.Core.Feactures.Fraccion.Queries.GetFraccionArancelariaList;
 using NicosApp.Core.Feactures.Fraccion.Querys.GetNicoList;
 using NicosApp.Core.Feactures.Fraccion.Commands.CreateCSVFraccion;
 using NicosApp.Core.Feactures.Fraccion.Queries.GetFraccionArancelariaId;
+using static NicosApp.Core.Feactures.Fraccion.Commands.CreateCSVFraccionPermisoAcotacion.FraccionPermisoAcotacionCSV;
+using NicosApp.Core.Feactures.Fraccion.Commands.CreateCSVFraccionPermisoAcotacion;
+using NicosApp.Core.Dtos;
 
 namespace NicosApp.Core.Mappings
 {
@@ -21,6 +24,12 @@ namespace NicosApp.Core.Mappings
                  .ReverseMap();
 
 
+            CreateMap<FraccionPermisoAcotacionCSV, FraccionArancelaria>()
+              .ReverseMap();
+
+            CreateMap<FraccionPermisoAcotacionCSV, PermisoFraccion>()
+             .ReverseMap();
+
             CreateMap<FraccionArancelaria, GetFraccionArancelariaFiltroDto>()
                  .ReverseMap();
 
@@ -34,6 +43,12 @@ namespace NicosApp.Core.Mappings
 
 
             CreateMap<Nico, NicoDto>()
+                .ReverseMap();
+
+
+
+
+            CreateMap<PermisoFraccion, PermisoFraccionDto>()
                 .ReverseMap();
 
 

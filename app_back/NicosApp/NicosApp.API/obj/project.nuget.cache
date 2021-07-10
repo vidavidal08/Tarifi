@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nDYdZdnmIkyuRa2N0BYQZFhF9VvOCo6VwljeiL6n5hcjlXVPCXyw+uRyoq8op4vhBIA838MJ9DYNPATh7UWvWw==",
+  "dgSpecHash": "j66cCukFMRWk4cW+ZZVziIwk3tUBS0H4tGx1OjVH4vBbsb9QKp0kDF0NJtgNxbIv2RWlhg21GDdgvf128/ruTw==",
   "success": true,
-  "projectFilePath": "D:\\Proyectos\\NicosApp\\NicosApp.API\\NicosApp.API.csproj",
+  "projectFilePath": "C:\\Proyectos\\TARIFIFI-PRODUCCION\\Tarifi\\app_back\\NicosApp\\NicosApp.API\\NicosApp.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\magef\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\magef\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
@@ -155,7 +155,8 @@
     "C:\\Users\\magef\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\magef\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\magef\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\magef\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    "C:\\Users\\magef\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
+    "C:\\Users\\magef\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.5\\microsoft.netcore.app.host.win-x64.5.0.5.nupkg.sha512"
   ],
   "logs": []
 }

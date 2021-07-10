@@ -22,7 +22,7 @@ namespace NicosApp.Core.Interfaces.Repositorios.Base
         /// 
         /// </summary>
         /// <param name="entity"></param>
-        void Update(T entity);
+        Task Update(T entity);
 
 
         /// <summary>
