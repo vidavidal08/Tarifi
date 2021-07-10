@@ -36,3 +36,17 @@
 color: white;
 
 }
+
+.gradiente {
+    background: linear-gradient(rgb(255, 208, 0), orange);
+    border-radius: 128px 128px 128px 128px;
+    -moz-border-radius: 128px 128px 128px 128px;
+    -webkit-border-radius: 128px 128px 128px 128px;
+    color:white;
+    border: 3px solid #989292;
+    height: 32px;
+    font-weight:    bold;
+    justify-content: center;
+    padding: 5px 0;
+  
+  }

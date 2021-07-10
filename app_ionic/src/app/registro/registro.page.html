@@ -35,6 +35,9 @@
     <ion-input type="password" formControlName="contra2" required></ion-input>
     <div *ngIf="validacionContra ==false" (click)='tagContra()'><label style="color:red;"> Las contraseñas no coiciden</label></div>
   </ion-item>
+  <ion-item>
+    <ion-checkbox color="primary" formControlName="terminos" (ionChange)="modalTerminos()"></ion-checkbox> &nbsp; Aceptar términos y condiciones de uso
+  </ion-item>
   <ion-button expand="block"  class="btn-registrarse" color="#ffbd59"
   type="submit"
   [disabled]="form.invalid"

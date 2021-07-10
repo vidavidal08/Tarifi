@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { AlertController } from '@ionic/angular';
-import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms';
+import { AlertController, ModalController } from '@ionic/angular';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { ApiSwaggerService } from './../services/api-swagger.service'
 import { Registro } from '../models/registro.model';
+import { ModalTerminosPage } from '../modal-terminos/modal-terminos.page';
 
 
 
@@ -28,7 +29,7 @@ export class RegistroPage implements OnInit {
     private alertController: AlertController,
     private router: Router,
     private serviceApis: ApiSwaggerService,
-    private formBuilder: FormBuilder
+    public modalController: ModalController
   ) { }
 
   ngOnInit(): void {
@@ -53,6 +54,9 @@ export class RegistroPage implements OnInit {
       contra2: new FormControl('', [
         Validators.required]
       ),
+      terminos: new FormControl(false, [
+        Validators.requiredTrue]
+      ),
     });
 
 
@@ -64,6 +68,15 @@ export class RegistroPage implements OnInit {
 
   tagCorreo() {
     this.validacionCorreo = true;
+  }
+
+  async modalTerminos(){
+    
+    const modal = await this.modalController.create({
+      component: ModalTerminosPage,
+      cssClass: 'my-custom-class'
+    });
+    return await modal.present();
   }
 
 
@@ -149,10 +162,10 @@ export class RegistroPage implements OnInit {
     if (correoValor == true && contrasenaValor == true) {
 
       this.serviceApis.register(this.getAddNewRegistro()).subscribe(result => {
-        console.log(result);
+       /* console.log(result);
         console.log(this.error = result["errores"]);
         console.log(this.ok = result["isOk"]);
-        console.log(this.mensaje = result["mensaje"]);
+        console.log(this.mensaje = result["mensaje"]);*/
 
         if (this.ok) {
           console.log("USUARIO REGISTRADO");

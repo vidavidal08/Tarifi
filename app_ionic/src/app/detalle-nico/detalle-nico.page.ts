@@ -16,12 +16,21 @@ export class DetalleNicoPage implements OnInit {
     unidadMedida: '',
     igi: '',
     ige: '',
+    permisosFraccion:[],
     nicos: [],
   };
+
   public selectedNico: {
     claveNICO: string,
     descripcion: string
   };
+
+  public selectedPF: {
+    id: string,
+    permiso: string,
+    acotacion: string
+  };
+
 
   constructor(
     private gs: GlobalStorage,
@@ -47,9 +56,12 @@ export class DetalleNicoPage implements OnInit {
         this.fraccion = fracciones.find(item => item.id === id);
         this.selectedNico.claveNICO = this.fraccion.nicos.find(x => x['claveNICO'] === claveNICO)['claveNICO'];
         this.selectedNico.descripcion = this.fraccion.nicos.find(x => x['claveNICO'] === claveNICO)['descripcion'];
+        this.selectedPF.id = this.fraccion.permisosFraccion.find(x => x['claveNICO'] === claveNICO)['id'];
         this.gs.setSelectedNicoCounter(this.fraccion);
         console.log(this.fraccion);
         console.log(this.selectedNico);
+        console.log(this.selectedPF);
+
       });
   }
 }

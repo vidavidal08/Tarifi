@@ -2,15 +2,11 @@
 
 </app-header-text>
 
-
-
-
-
 <ion-content>
-<div class="fondo-div">
-  <label class="form-control">Fracción arancelaria: </label> {{ fraccion.claveFraccion}}<br>
-  <label class="form-control">Descripción:</label> {{fraccion.descripcion}}<br>
-</div>
+  <div class="fondo-div">
+    <label class="form-control">Fracción arancelaria: </label> {{ fraccion.claveFraccion}}<br>
+    <label class="form-control">Descripción:</label> {{fraccion.descripcion}}<br>
+  </div>
   <ion-item style="font-size: 20px;">
     <b> Nico:</b> {{selectedNico.claveNICO}}
   </ion-item>
@@ -29,7 +25,14 @@
   <ion-item style="font-size: 20px;">
     <b>Unidad de medida:</b>{{fraccion.unidadMedida}}
   </ion-item>
+
+  <ion-item style="font-size: 20px;">
+    <b>id:</b>{{selectedPF.id}}
+  </ion-item>
+  <div style="text-align: center;margin-top: 5%;">
+    <div class="gradiente btn1" style="width: 60%; margin: 0 auto;" [routerLink]="['/list-nico', 'top10', 'top10']">Permisos Fracción</div>
+  </div>
   <div style="text-align: center;">
-  <img src="assets/logo.png" style="width: 25%;margin-top: 50px;">
+    <img src="assets/logo.png" style="width: 25%;margin-top: 50px;">
   </div>
 </ion-content>
