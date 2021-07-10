@@ -58,9 +58,16 @@ const routes: Routes = [
   {
     path: 'registro-exitoso',
     loadChildren: () => import('./registro-exitoso/registro-exitoso.module').then( m => m.RegistroExitosoPageModule)
-  },  {
+  },
+  {
     path: 'modal-terminos',
     loadChildren: () => import('./modal-terminos/modal-terminos.module').then( m => m.ModalTerminosPageModule)
+  },
+  {
+    path: 'permisos/:id',
+    loadChildren: () => import('./permisos/permisos.module').then( m => m.PermisosPageModule),
+    canActivate: [AuthGuardService]
+
   },
 
 ];

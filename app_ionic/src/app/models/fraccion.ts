@@ -5,8 +5,14 @@ export interface Fraccion {
   unidadMedida:	string;
   igi: string;
   ige: string;
-  permisosFraccion:[],
+  permisosFraccion?: PermisosFraccion[];
   nicos: string[];
+  }
+
+  export interface PermisosFraccion{
+    id: string;
+    permiso: string;
+    acotacion: string;
   }
 
   

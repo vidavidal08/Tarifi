@@ -1,4 +1,4 @@
-import { Fraccion } from './../models/fraccion';
+import { Fraccion, PermisosFraccion } from './../models/fraccion';
 import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { GlobalStorage } from '../services/global-storage.service';
@@ -9,6 +9,10 @@ import { GlobalStorage } from '../services/global-storage.service';
   styleUrls: ['./detalle-nico.page.scss'],
 })
 export class DetalleNicoPage implements OnInit {
+  public permisos: PermisosFraccion[] = [];
+  public _id : string = '';
+  
+
   public fraccion: Fraccion = {
     id: '',
     claveFraccion: '',
@@ -24,13 +28,6 @@ export class DetalleNicoPage implements OnInit {
     claveNICO: string,
     descripcion: string
   };
-
-  public selectedPF: {
-    id: string,
-    permiso: string,
-    acotacion: string
-  };
-
 
   constructor(
     private gs: GlobalStorage,
@@ -50,18 +47,16 @@ export class DetalleNicoPage implements OnInit {
     };
     const routeParams = this.route.snapshot.paramMap;
     const id = routeParams.get('id');
+    this._id = id;
+    
     const claveNICO = routeParams.get('claveNico');
     this.gs.getFracciones()
       .then(fracciones => {
         this.fraccion = fracciones.find(item => item.id === id);
         this.selectedNico.claveNICO = this.fraccion.nicos.find(x => x['claveNICO'] === claveNICO)['claveNICO'];
         this.selectedNico.descripcion = this.fraccion.nicos.find(x => x['claveNICO'] === claveNICO)['descripcion'];
-        this.selectedPF.id = this.fraccion.permisosFraccion.find(x => x['claveNICO'] === claveNICO)['id'];
+        this.permisos = this.fraccion.permisosFraccion;
         this.gs.setSelectedNicoCounter(this.fraccion);
-        console.log(this.fraccion);
-        console.log(this.selectedNico);
-        console.log(this.selectedPF);
-
       });
   }
 }

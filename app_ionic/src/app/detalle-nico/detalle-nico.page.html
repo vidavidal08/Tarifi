@@ -26,11 +26,8 @@
     <b>Unidad de medida:</b>{{fraccion.unidadMedida}}
   </ion-item>
 
-  <ion-item style="font-size: 20px;">
-    <b>id:</b>{{selectedPF.id}}
-  </ion-item>
-  <div style="text-align: center;margin-top: 5%;">
-    <div class="gradiente btn1" style="width: 60%; margin: 0 auto;" [routerLink]="['/list-nico', 'top10', 'top10']">Permisos Fracción</div>
+  <div style="text-align: center;margin-top: 5%;" *ngIf = "permisos.length > 0">
+    <div class="gradiente btn1" style="width: 60%; margin: 0 auto;" [routerLink]="['/permisos',_id]">Permisos Fracción</div>
   </div>
   <div style="text-align: center;">
     <img src="assets/logo.png" style="width: 25%;margin-top: 50px;">
