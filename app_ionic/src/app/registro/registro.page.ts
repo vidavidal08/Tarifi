@@ -138,7 +138,7 @@ export class RegistroPage implements OnInit {
   }
 
   async onSubmit() {
-    debugger;
+    
     let correoValor: boolean;
     let contrasenaValor: boolean;
     let regexp = new RegExp('^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$');
@@ -156,23 +156,25 @@ export class RegistroPage implements OnInit {
       contrasenaValor = true;
     } else {
       this.validacionContra = false;
-      console.log("las contraseñas no coinciden ");
+      console.log("Las contraseñas no coinciden ");
     }
     // Condicional para manddar datos a End Point
     if (correoValor == true && contrasenaValor == true) {
 
       this.serviceApis.register(this.getAddNewRegistro()).subscribe(result => {
+        console.log(result);
        /* console.log(result);
         console.log(this.error = result["errores"]);
         console.log(this.ok = result["isOk"]);
         console.log(this.mensaje = result["mensaje"]);*/
 
-        if (this.ok) {
+        if (result['isOk']) {
           console.log("USUARIO REGISTRADO");
           this.RespuestaBack_OK();
         } else if (!this.ok) {
 
           this.RespuestaBack_Bag(this.mensaje);
+          this.router.navigate(['/registro']);
         }
       });
     }

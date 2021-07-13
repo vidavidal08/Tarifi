@@ -1,6 +1,6 @@
 {
   "appId": "io.ionic.starter",
-  "appName": "tariffi_app",
+  "appName": "Tariffi",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "www",
