@@ -94,7 +94,7 @@ export class RegistroPage implements OnInit {
           text: 'OK',
           handler: () => {
             console.log('Buy clicked');
-            this.form.reset();
+            this.router.navigate(['/registro']);
           }
         }
       ]
@@ -174,7 +174,6 @@ export class RegistroPage implements OnInit {
         } else if (!this.ok) {
 
           this.RespuestaBack_Bag(this.mensaje);
-          this.router.navigate(['/registro']);
         }
       });
     }
