@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using NicosApp.Core.Feactures.Seguridad.Commands.ConfirmarEmail;
-using NicosApp.Core.Feactures.Seguridad.Commands.Login;
-using NicosApp.Core.Feactures.Seguridad.Commands.Registrar;
+using NicosApp.Core.Features.Seguridad.Commands.ConfirmarEmail;
+using NicosApp.Core.Features.Seguridad.Commands.Login;
+using NicosApp.Core.Features.Seguridad.Commands.Registrar;
 using NicosApp.Core.Models;
 using System.Threading.Tasks;
 

@@ -1,5 +1,5 @@
 ﻿using CsvHelper;
-using NicosApp.Core.Feactures.Nicos.Commands.CreateCSVNicos;
+using NicosApp.Core.Features.Nicos.Commands.CreateCSVNicos;
 using NicosApp.Core.Interfaces.Files;
 using System.Collections.Generic;
 using System.Globalization;

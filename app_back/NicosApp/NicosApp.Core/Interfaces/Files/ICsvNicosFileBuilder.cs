@@ -1,4 +1,4 @@
-﻿using NicosApp.Core.Feactures.Nicos.Commands.CreateCSVNicos;
+﻿using NicosApp.Core.Features.Nicos.Commands.CreateCSVNicos;
 
 namespace NicosApp.Core.Interfaces.Files
 {

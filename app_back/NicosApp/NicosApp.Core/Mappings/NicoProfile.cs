@@ -1,13 +1,13 @@
 ﻿using AutoMapper;
 using NicosApp.Core.Dtos;
 using NicosApp.Core.Entidades;
-using NicosApp.Core.Feactures.Fraccion.Commands.CreateCSVFraccion;
-using NicosApp.Core.Feactures.Fraccion.Commands.CreateCSVFraccionPermisoAcotacion;
-using NicosApp.Core.Feactures.Fraccion.Queries.GetFraccionArancelariaDetail;
-using NicosApp.Core.Feactures.Fraccion.Queries.GetFraccionArancelariaId;
-using NicosApp.Core.Feactures.Fraccion.Queries.GetFraccionArancelariaList;
-using NicosApp.Core.Feactures.Fraccion.Querys.GetNicoList;
-using NicosApp.Core.Feactures.Nicos.Commands.CreateCSVNicos;
+using NicosApp.Core.Features.Fraccion.Commands.CreateCSVFraccion;
+using NicosApp.Core.Features.Fraccion.Commands.CreateCSVFraccionPermisoAcotacion;
+using NicosApp.Core.Features.Fraccion.Queries.GetFraccionArancelariaDetail;
+using NicosApp.Core.Features.Fraccion.Queries.GetFraccionArancelariaId;
+using NicosApp.Core.Features.Fraccion.Queries.GetFraccionArancelariaList;
+using NicosApp.Core.Features.Fraccion.Querys.GetNicoList;
+using NicosApp.Core.Features.Nicos.Commands.CreateCSVNicos;
 
 namespace NicosApp.Core.Mappings
 {

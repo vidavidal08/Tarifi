@@ -1,10 +1,10 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using NicosApp.Core.Feactures.Fraccion.Commands.CreateCSVFraccion;
-using NicosApp.Core.Feactures.Fraccion.Commands.CreateCSVFraccionPermisoAcotacion;
-using NicosApp.Core.Feactures.Fraccion.Queries.GetFraccionArancelariaDetail;
-using NicosApp.Core.Feactures.Fraccion.Queries.GetFraccionArancelariaId;
-using NicosApp.Core.Feactures.Fraccion.Querys.GetNicoList;
+using NicosApp.Core.Features.Fraccion.Commands.CreateCSVFraccion;
+using NicosApp.Core.Features.Fraccion.Commands.CreateCSVFraccionPermisoAcotacion;
+using NicosApp.Core.Features.Fraccion.Queries.GetFraccionArancelariaDetail;
+using NicosApp.Core.Features.Fraccion.Queries.GetFraccionArancelariaId;
+using NicosApp.Core.Features.Fraccion.Querys.GetNicoList;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;

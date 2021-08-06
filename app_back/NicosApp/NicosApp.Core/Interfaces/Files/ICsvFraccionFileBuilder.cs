@@ -1,5 +1,5 @@
-﻿using NicosApp.Core.Feactures.Fraccion.Commands.CreateCSVFraccion;
-using NicosApp.Core.Feactures.Fraccion.Commands.CreateCSVFraccionPermisoAcotacion;
+﻿using NicosApp.Core.Features.Fraccion.Commands.CreateCSVFraccion;
+using NicosApp.Core.Features.Fraccion.Commands.CreateCSVFraccionPermisoAcotacion;
 using System.Collections.Generic;
 using System.IO;
 

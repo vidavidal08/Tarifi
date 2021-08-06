@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using NicosApp.Core.Feactures.Nicos.Commands.CreateCSVNicos;
+using NicosApp.Core.Features.Nicos.Commands.CreateCSVNicos;
 using System.Threading.Tasks;
 
 namespace NicosApp.API.Controllers

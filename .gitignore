@@ -30,3 +30,4 @@ app_ionic/plugins
 app_ionic/www
 app_back/NicosApp/NicosApp.API/obj/
 app_back/NicosApp/NicosApp.API/bin/
+app_back/NicosApp/NicosApp.Core/bin

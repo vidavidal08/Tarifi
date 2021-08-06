@@ -1,13 +1,13 @@
 ﻿using CsvHelper;
-using NicosApp.Core.Feactures.Fraccion.Commands.CreateCSVFraccion;
-using NicosApp.Core.Feactures.Fraccion.Commands.CreateCSVFraccionPermisoAcotacion;
+using NicosApp.Core.Features.Fraccion.Commands.CreateCSVFraccion;
+using NicosApp.Core.Features.Fraccion.Commands.CreateCSVFraccionPermisoAcotacion;
 using NicosApp.Core.Interfaces.Files;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
-using static NicosApp.Core.Feactures.Fraccion.Commands.CreateCSVFraccionPermisoAcotacion.FraccionPermisoAcotacionCSV;
+using static NicosApp.Core.Features.Fraccion.Commands.CreateCSVFraccionPermisoAcotacion.FraccionPermisoAcotacionCSV;
 
 namespace NicosApp.Infraestructura.Files
 {

@@ -1,0 +1,17 @@
+﻿using MediatR;
+using System.Collections.Generic;
+
+namespace NicosApp.Core.Features.Fraccion.Queries.GetFraccionArancelariaDetail
+{
+    public class GetFraccionArancelariaFiltro : IRequest<List<GetFraccionArancelariaFiltroDto>>
+    {
+        /// <summary>
+        /// 
+        /// </summary>
+        public string ClaveArancelaria { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public string Descripcion { get; set; }
+    }
+}
