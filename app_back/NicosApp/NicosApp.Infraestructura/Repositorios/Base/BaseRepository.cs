@@ -13,32 +13,19 @@ namespace NicosApp.Infraestructura.Repositorios.Base
 {
     public class BaseRepository<T> : IRepository<T> where T : BaseEntity<Guid>
     {
-
         /// <summary>
         /// 
         /// </summary>
         private readonly NicosAppContext _nicosAppContext;
-
-
-
-
         /// <summary>
         /// 
         /// </summary>
         protected DbSet<T> _entities;
-
-
-
-
         public BaseRepository(NicosAppContext nicosAppContext)
         {
             _nicosAppContext = nicosAppContext;
             _entities = nicosAppContext.Set<T>();
-
         }
-
-
-
         /// <summary>
         /// 
         /// </summary>
@@ -50,22 +37,14 @@ namespace NicosApp.Infraestructura.Repositorios.Base
             _nicosAppContext.Entry<T>(entity).State = EntityState.Added;
             await _nicosAppContext.SaveChangesAsync();
         }
-
-
-
-
         /// <summary>
         /// 
         /// </summary>
         /// <returns></returns>
         public IQueryable<T> GetAll()
         {
-
-
             return _entities.AsQueryable();
         }
-
-
         /// <summary>
         /// 
         /// </summary>
@@ -78,9 +57,7 @@ namespace NicosApp.Infraestructura.Repositorios.Base
 
             _nicosAppContext.Entry<T>(entity).State = EntityState.Deleted;
             await _nicosAppContext.SaveChangesAsync();
-
         }
-
         /// <summary>
         /// 
         /// </summary>
@@ -90,9 +67,6 @@ namespace NicosApp.Infraestructura.Repositorios.Base
         {
             return await _entities.FindAsync(id);
         }
-
-
-
         /// <summary>
         /// 
         /// </summary>
@@ -105,9 +79,5 @@ namespace NicosApp.Infraestructura.Repositorios.Base
             //_nicosAppContext.Update(entity);
             await _nicosAppContext.SaveChangesAsync();
         }
-
-
-
-
     }
 }

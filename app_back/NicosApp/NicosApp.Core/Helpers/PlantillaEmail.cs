@@ -1,14 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace NicosApp.Core.Helpers
+﻿namespace NicosApp.Core.Helpers
 {
     public class PlantillaEmail
     {
-
         /// <summary>
         /// 
         /// </summary>
@@ -19,7 +12,6 @@ namespace NicosApp.Core.Helpers
         /// <returns></returns>
         public static string crearPlantilla(string nombre, string apellidos, string email, string password)
         {
-
             string htmlContent = $"<html>" +
                     "<head>" +
                     "<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous'>" +
@@ -43,10 +35,6 @@ namespace NicosApp.Core.Helpers
                      "</div>" +
                 "</body>" +
                 "</html>";
-
-
-
-
             return htmlContent;
         }
     }

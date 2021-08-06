@@ -13,13 +13,10 @@ namespace NicosApp.Infraestructura.Identity
     public class JwtGenerador : IJwtGenerador
     {
         private readonly IConfiguration _configuration;
-
-
         public JwtGenerador(IConfiguration configuration)
         {
             _configuration = configuration;
         }
-
         /// <summary>
         /// 
         /// </summary>
@@ -28,15 +25,11 @@ namespace NicosApp.Infraestructura.Identity
         public string crearToken(ApplicationUser usuario)
         {
             var claims = new List<Claim>() {
-                   new Claim(JwtRegisteredClaimNames.NameId, usuario.UserName)
-                };
-
+                new Claim(JwtRegisteredClaimNames.NameId, usuario.UserName)
+            };
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["JWT:Secret"]));
-
-
             var credenciales = new SigningCredentials(key, SecurityAlgorithms.HmacSha512Signature);
-
-
+            
             var tokenDesripcion = new SecurityTokenDescriptor
             {
                 Subject = new ClaimsIdentity(claims),
@@ -49,7 +42,6 @@ namespace NicosApp.Infraestructura.Identity
             var token = tokenManejador.CreateToken(tokenDesripcion);
 
             return tokenManejador.WriteToken(token);
-
         }
     }
 }

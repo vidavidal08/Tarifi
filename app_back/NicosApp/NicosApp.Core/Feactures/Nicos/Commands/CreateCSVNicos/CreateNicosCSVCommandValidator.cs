@@ -7,10 +7,8 @@ namespace NicosApp.Core.Feactures.Nicos.Commands.CreateCSVNicos
 {
     public class CreateNicosCSVCommandValidator : AbstractValidator<CreateNicosCSVCommand>
     {
-
         public CreateNicosCSVCommandValidator()
         {
-
             RuleFor(x => x.ArchivoCSV.Length)
                     .NotNull()
                     .LessThanOrEqualTo(4 * 1024 * 1024)
@@ -20,9 +18,6 @@ namespace NicosApp.Core.Feactures.Nicos.Commands.CreateCSVNicos
                     .NotNull()
                     .Must(x => x.Equals("text/csv"))
            .WithMessage("Tipo de formato no permitido");
-
-
-
         }
     }
 }

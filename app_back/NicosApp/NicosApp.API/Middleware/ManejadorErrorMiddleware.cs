@@ -14,22 +14,15 @@ namespace NicosApp.API.Middleware
         /// 
         /// </summary>
         private readonly RequestDelegate _next;
-
         /// <summary>
         /// 
         /// </summary>
         private readonly ILogger<ManejadorErrorMiddleware> _logger;
-
-
-
-
         public ManejadorErrorMiddleware(RequestDelegate next, ILogger<ManejadorErrorMiddleware> logger)
         {
             _next = next;
             _logger = logger;
         }
-
-
         /// <summary>
         /// 
         /// </summary>
@@ -43,14 +36,10 @@ namespace NicosApp.API.Middleware
             }
             catch (Exception ex)
             {
-
                 await ManejadorExcepcionAsincrono(context, ex, _logger);
             }
 
         }
-
-
-
         /// <summary>
         /// 
         /// </summary>
@@ -61,8 +50,6 @@ namespace NicosApp.API.Middleware
         private async Task ManejadorExcepcionAsincrono(HttpContext context, Exception ex, ILogger<ManejadorErrorMiddleware> logger)
         {
             object error = null;
-
-
             switch (ex)
             {
                 case ManejadorExcepcion me:
@@ -79,15 +66,11 @@ namespace NicosApp.API.Middleware
 
             context.Response.ContentType = "application/json";
 
-
             if (error != null)
             {
                 var resultados = JsonConvert.SerializeObject(new { error });
                 await context.Response.WriteAsync(resultados);
             }
-
-
         }
-
     }
 }

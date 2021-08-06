@@ -1,9 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using NicosApp.Core.Entidades;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace NicosApp.Core.Interfaces.Repositorios
@@ -16,8 +12,6 @@ namespace NicosApp.Core.Interfaces.Repositorios
         /// <param name="email"></param>
         /// <returns></returns>
         Task<bool> isWhereEmailAsync(string email);
-
-
         /// <summary>
         /// 
         /// </summary>

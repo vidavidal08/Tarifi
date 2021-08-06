@@ -1,13 +1,9 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NicosApp.Core.Entidades
 {
-   partial class Role : IdentityRole<Guid>
+    partial class Role : IdentityRole<Guid>
     {
     }
 }

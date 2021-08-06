@@ -28,4 +28,5 @@ app_ionic/node_modules
 app_ionic/platforms
 app_ionic/plugins
 app_ionic/www
-app_back/NicosApp/NicosApp.API/obj/Debug/net5.0/NicosApp.API.assets.cache
+app_back/NicosApp/NicosApp.API/obj/
+app_back/NicosApp/NicosApp.API/bin/

@@ -10,23 +10,14 @@ namespace NicosApp.Core.Feactures.Seguridad.Commands.ConfirmarEmail
 {
     public class ConfirmarEmailCommandHandle : IRequestHandler<ConfirmarEmailCommand, Result>
     {
-
         /// <summary>
         /// 
         /// </summary>
         private readonly UserManager<ApplicationUser> _userManager;
-
-
-
-        public ConfirmarEmailCommandHandle(UserManager<ApplicationUser> userManager
-                                      )
+        public ConfirmarEmailCommandHandle(UserManager<ApplicationUser> userManager)
         {
             _userManager = userManager;
-
         }
-
-
-
         /// <summary>
         /// 
         /// </summary>
@@ -37,22 +28,16 @@ namespace NicosApp.Core.Feactures.Seguridad.Commands.ConfirmarEmail
         {
             ApplicationUser user = await _userManager.FindByIdAsync(request.userId);
 
-
             if(user != null)
             {
                 IdentityResult result = await _userManager.
                 ConfirmEmailAsync(user, request.token);
-
-
                 if (result.Succeeded)
                 {
                     return Result.Success("¡Correo electrónico confirmado correctamente!");
                 }
             }
-          
-
             throw new ApiException("Error en validar el correo");
-
         }
     }
 }

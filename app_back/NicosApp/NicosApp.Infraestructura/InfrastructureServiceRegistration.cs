@@ -21,18 +21,10 @@ namespace NicosApp.Infraestructura
 {
     public static class InfrastructureServiceRegistration
     {
-
-
         public static IServiceCollection AddInfrastructureServices(this IServiceCollection services, IConfiguration configuration)
         {
-
-
-
-
             services.AddDbContext<NicosAppContext>(options =>
-                   options.UseSqlServer(configuration.GetConnectionString("DefaultConnnection")));
-
-
+            options.UseSqlServer(configuration.GetConnectionString("DefaultConnnection")));
 
             // Adding Authentication  
             services.AddAuthentication(options =>
@@ -41,8 +33,6 @@ namespace NicosApp.Infraestructura
                 options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
                 options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
             })
-
-
             // Adding Jwt Bearer  
             .AddJwtBearer(options =>
             {
@@ -55,13 +45,9 @@ namespace NicosApp.Infraestructura
                     IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["JWT:Secret"]))
                 };
             });
-
-
             services.AddIdentity<ApplicationUser, IdentityRole>()
-                    .AddEntityFrameworkStores<NicosAppContext>()
-                    .AddDefaultTokenProviders();
-
-
+                .AddEntityFrameworkStores<NicosAppContext>()
+                .AddDefaultTokenProviders();
 
             services.Configure<IdentityOptions>(options =>
             {
@@ -77,44 +63,20 @@ namespace NicosApp.Infraestructura
                 options.User.AllowedUserNameCharacters =
                 "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-._@+";
                 //options.SignIn.RequireConfirmedPhoneNumber = false;
-
-
-
-
                 options.User.RequireUniqueEmail = false;
-
                 options.SignIn.RequireConfirmedEmail = false;
-
             });
 
-
-
-
             services.AddScoped(typeof(IRepository<>), typeof(BaseRepository<>));
-
-
-
-
-
             services.AddScoped<IFraccionArancelariaRepositorio, FraccionArancelariaRepositorio>();
             services.AddScoped<INicoRepositorio, NicoRepositorio>();
             services.AddScoped<IUsuarioRepositorio, UsuarioRepositorio>();
             services.AddScoped<IPermisoFraccionRepositorio, PermisoFraccionRepositorio>();
-
             services.AddTransient<IJwtGenerador, JwtGenerador>();
-
-
             services.AddTransient<ICsvNicosFileBuilder, CsvNicosFileBuilder>();
             services.AddTransient<ICsvFraccionFileBuilder, CsvFraccionFileBuilder>();
-
-
-
-
             services.AddEmailNotification(configuration);
-
             return services;
-
         }
-
     }
 }

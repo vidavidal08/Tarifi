@@ -23,16 +23,10 @@ namespace NicosApp.Core.Feactures.Fraccion.Querys
         /// 
         /// </summary>
         private readonly INicoRepositorio _nicoRepositorio;
-
-
-
         /// <summary>
         /// 
         /// </summary>
         private readonly IMapper _mapper;
-
-
-
         public GetFraccionArancelariaListQueryHandler(IFraccionArancelariaRepositorio fraccionArancelariaRepositorio,
                                        INicoRepositorio nicoRepositorio,
                                        IMapper mapper)
@@ -41,12 +35,6 @@ namespace NicosApp.Core.Feactures.Fraccion.Querys
             _nicoRepositorio = nicoRepositorio;
             _mapper = mapper;
         }
-
-
-
-
-
-
         /// <summary>
         /// 
         /// </summary>

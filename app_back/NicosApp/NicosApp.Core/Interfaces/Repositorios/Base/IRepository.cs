@@ -16,30 +16,22 @@ namespace NicosApp.Core.Interfaces.Repositorios.Base
         /// <param name="id"></param>
         /// <returns></returns>
         Task Add(T entity);
-
-
         /// <summary>
         /// 
         /// </summary>
         /// <param name="entity"></param>
         Task Update(T entity);
-
-
         /// <summary>
         /// 
         /// </summary>
         /// <returns></returns>
         IQueryable<T> GetAll();
-
-
         /// <summary>
         /// 
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
         Task Delete(Guid id);
-
-
         /// <summary>
         /// 
         /// </summary>

@@ -11,39 +11,26 @@ namespace NicosApp.Core.Feactures.Seguridad.Commands.Login
 {
     public class LoginCommandHandle : IRequestHandler<LoginUsuarioCommand, TokenDto>
     {
-
-
         /// <summary>
         /// 
         /// </summary>
         private readonly UserManager<ApplicationUser> _userManager;
-
         /// <summary>
         /// 
         /// </summary>
         private readonly SignInManager<ApplicationUser> _signInManager;
-
-
-
         /// <summary>
         /// 
         /// </summary>
         private readonly IJwtGenerador _jwtGenerador;
-
-
         /// <summary>
         /// 
         /// </summary>
         private readonly ICurrentUserService _currentUserService;
-
-
         /// <summary>
         /// 
         /// </summary>
         private readonly ILogger _logger;
-
-
-
         public LoginCommandHandle(UserManager<ApplicationUser> userManager,
                             SignInManager<ApplicationUser> signInManager,
                             IJwtGenerador jwtGenerador,
@@ -54,9 +41,6 @@ namespace NicosApp.Core.Feactures.Seguridad.Commands.Login
             _jwtGenerador = jwtGenerador;
             _currentUserService = currentUserService;
         }
-
-
-
         /// <summary>
         /// 
         /// </summary>
@@ -71,32 +55,19 @@ namespace NicosApp.Core.Feactures.Seguridad.Commands.Login
 
             var usuario = await _userManager.FindByEmailAsync(request.Email);
 
-
-         
-
-
             if (usuario == null)
             {
                 string mensaje = "Email o password invalidos";             
 
                 throw new UnauthorizedExeption( mensaje);
             }
-
-
             //if (!await _userManager.IsEmailConfirmedAsync(usuario))
             //{
             //    string mensaje = "Debe tener un correo electrónico confirmado para iniciar sesión.";
 
             //    throw new UnauthorizedExeption(mensaje);
             //}
-
-
-
-
             var resultado = await _signInManager.CheckPasswordSignInAsync(usuario, request.Password, false);
-
-
-
 
             if (!string.IsNullOrEmpty(userId))
             {
@@ -105,27 +76,19 @@ namespace NicosApp.Core.Feactures.Seguridad.Commands.Login
                     Email = request.Email,
                     UserName = request.Email
                 };
-
-
                 userName = await _userManager.GetUserNameAsync(applicationUser);
             }
-
-
-
 
             if (resultado.Succeeded)
             {
                 return new TokenDto
                 {
-
                     Token = _jwtGenerador.crearToken(usuario),
                     Nombre = usuario.Nombre,
                     Email = usuario.Email
                 };
             }
-
             throw new UnauthorizedExeption( "email o contraseña inválida");
-
         }
     }
 }

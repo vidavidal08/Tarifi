@@ -1,11 +1,7 @@
 ﻿using NicosApp.Core.Feactures.Fraccion.Commands.CreateCSVFraccion;
 using NicosApp.Core.Feactures.Fraccion.Commands.CreateCSVFraccionPermisoAcotacion;
-using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NicosApp.Core.Interfaces.Files
 {

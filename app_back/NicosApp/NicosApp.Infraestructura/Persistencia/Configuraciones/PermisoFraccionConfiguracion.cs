@@ -15,32 +15,25 @@ namespace NicosApp.Infraestructura.Persistencia.Configuraciones
         {
             builder.ToTable("PermisosFraccion");
 
-
             builder.HasKey(e => e.Id);
-
 
             builder.Property(e => e.Id)
                .HasColumnName("IdPermisoFraccion")
                .ValueGeneratedNever();
 
-
             builder.Property(e => e.Acotacion)
              .HasColumnName("Acotacion")
              .HasMaxLength(5000);
 
-
             builder.Property(e => e.Permiso)
              .HasColumnName("Permiso")
              .HasMaxLength(5000);
-
-
 
             builder.HasOne(d => d.FraccionArancelaria)
               .WithMany(p => p.PermisosFraccion)
               .HasForeignKey(d => d.IdFraccionArancelaria)
               .OnDelete(DeleteBehavior.ClientSetNull)
               .HasConstraintName("FK_FraccionArancelaria_PermisoFraccion");
-
         }
     }
 }

@@ -9,34 +9,23 @@ namespace NicosApp.Core.Feactures.Fraccion.Commands.CreateCSVFraccion
         /// 
         /// </summary>
         public string ClaveFraccion { get; set; }
-
-
         /// <summary>
         /// 
         /// </summary>
         public string Descripcion { get; set; }
-
-
-
         /// <summary>
         /// 
         /// </summary>
         public string UnidadMedida { get; set; }
-
-
         /// <summary>
         /// 
         /// </summary>
         public string IGI { get; set; }
-
-
         /// <summary>
         /// 
         /// </summary>
         public string IGE { get; set; }
     }
-
-
     public class FraccionCSVMap : ClassMap<FraccionCSV>
     {
         public FraccionCSVMap()
@@ -47,7 +36,6 @@ namespace NicosApp.Core.Feactures.Fraccion.Commands.CreateCSVFraccion
             Map(m => m.UnidadMedida).Index(2);
             Map(m => m.IGI).Index(3);
             Map(m => m.IGE).Index(4);
-
         }
     }
 }

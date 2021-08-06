@@ -1,17 +1,13 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using NicosApp.Core.Feactures.Fraccion.Commands.CreateCSVFraccion;
+using NicosApp.Core.Feactures.Fraccion.Commands.CreateCSVFraccionPermisoAcotacion;
 using NicosApp.Core.Feactures.Fraccion.Queries.GetFraccionArancelariaDetail;
+using NicosApp.Core.Feactures.Fraccion.Queries.GetFraccionArancelariaId;
 using NicosApp.Core.Feactures.Fraccion.Querys.GetNicoList;
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using NicosApp.Core.Feactures.Fraccion.Commands.CreateCSVFraccion;
-using System;
-using NicosApp.Core.Feactures.Fraccion.Queries.GetFraccionArancelariaId;
-using NicosApp.Core.Models;
-using NicosApp.Core.Entidades;
-using Microsoft.AspNetCore.Authorization;
-using NicosApp.Core.Feactures.Fraccion.Commands.CreateCSVFraccionPermisoAcotacion;
-using Microsoft.AspNetCore.Cors;
 
 /// <summary>
 /// Autor: ISC. Magdiel Efrain Palacios Rivera
@@ -22,10 +18,8 @@ namespace NicosApp.API.Controllers
     //[Authorize(AuthenticationSchemes = "Bearer")]
     [RequireHttps]
     [ApiVersion("1.0")]
-    
     public class FraccionController : MiControllerBase
     {
-
         [HttpGet]
         [MapToApiVersion("1.0")]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
@@ -34,36 +28,22 @@ namespace NicosApp.API.Controllers
         {
             return Ok(await Mediator.Send(new GetFraccionArancelariaListQuery()));
         }
-
-
-
-
         [HttpGet("{id}")]
         [MapToApiVersion("1.0")]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status200OK)]
-
         public async Task<ActionResult<FraccionArancelariaDto>> Get(Guid id)
         {
             return Ok(await Mediator.Send(new GetFraccionArancelariaIdQuery() { Id = id }));
         }
-
-
-
         [HttpGet("{idFraccion}/{id}")]
         [MapToApiVersion("1.0")]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status200OK)]
-
         public async Task<ActionResult<FraccionArancelariaDto>> Get(Guid idFraccion, Guid id)
         {
             return Ok(await Mediator.Send(new GetFraccionArancelariaIdQuery() { Id = id }));
         }
-
-
-
-
-
         [HttpGet("filtro")]
         [MapToApiVersion("1.0")]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
@@ -72,11 +52,6 @@ namespace NicosApp.API.Controllers
         {
             return Ok(await Mediator.Send(parametros));
         }
-
-
-
-
-
         [HttpPost("cargarArancelesCSV")]
         [MapToApiVersion("1.0")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
@@ -87,25 +62,13 @@ namespace NicosApp.API.Controllers
             await Mediator.Publish(data);
             return NoContent();
         }
-
-
         [HttpPost("cargarArancelesPermisoAcotacionCSV")]
         [MapToApiVersion("1.0")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<ActionResult<List<FraccionPermisoAcotacionCSV>>> ExportEventsPermisoAcotacion([FromForm] CreateFraccionPermisoAcotacionCSVCommand data)
         {
-
             return await Mediator.Send(data);
-
         }
-
-
-
-
-
-
-
-
     }
 }

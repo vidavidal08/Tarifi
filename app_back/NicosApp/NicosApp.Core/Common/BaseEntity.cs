@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-/// <summary>
+﻿/// <summary>
 /// Autor: ISC. Magdiel Efrain Palacios Rivera
 /// Fecha: 20-02-2021
 /// </summary>

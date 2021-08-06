@@ -1,10 +1,5 @@
 ﻿using CsvHelper.Configuration;
 using MediatR;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NicosApp.Core.Feactures.Fraccion.Commands.CreateCSVFraccionPermisoAcotacion
 {
@@ -14,27 +9,18 @@ namespace NicosApp.Core.Feactures.Fraccion.Commands.CreateCSVFraccionPermisoAcot
         /// 
         /// </summary>
         public string ClaveFraccion { get; set; }
-
-
         /// <summary>
         /// 
         /// </summary>
         public string Descripcion { get; set; }
-
-
-
         /// <summary>
         /// 
         /// </summary>
         public string Acotacion { get; set; }
-
-
         /// <summary>
         /// 
         /// </summary>
         public string Perniso { get; set; }
-
-
         public class FraccionPernisoAcotacionCSVMap : ClassMap<FraccionPermisoAcotacionCSV>
         {
             public FraccionPernisoAcotacionCSVMap()

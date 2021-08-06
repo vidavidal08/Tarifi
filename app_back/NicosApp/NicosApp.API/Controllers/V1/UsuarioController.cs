@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using NicosApp.Core.Feactures.Seguridad.Commands.ConfirmarEmail;
@@ -15,8 +14,6 @@ namespace NicosApp.API.Controllers
     [ApiVersion("1.0")]
     public class UsuarioController : MiControllerBase
     {
-
-
         /// <summary>
         /// 
         /// </summary>
@@ -24,17 +21,11 @@ namespace NicosApp.API.Controllers
         [HttpPost("login")]
         [MapToApiVersion("1.0")]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        [ProducesResponseType(StatusCodes.Status200OK)]
-       
+        [ProducesResponseType(StatusCodes.Status200OK)] 
         public async Task<ActionResult<TokenDto>> Login(LoginUsuarioCommand usuario)
         {
             return await Mediator.Send(usuario);
         }
-
-
-
-
-
         /// <summary>
         /// 
         /// </summary>
@@ -47,11 +38,7 @@ namespace NicosApp.API.Controllers
         public async Task<ActionResult<Result>> Registrar(RegistrarUsuarioCommand registrarUsuarioCommand)
         {
             return await Mediator.Send(registrarUsuarioCommand);
-
         }
-
-
-
         /// <summary>
         /// 
         /// </summary>
@@ -63,13 +50,7 @@ namespace NicosApp.API.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<ActionResult<Result>> ConfirmarEmail(string userId, string token)
         {
-
             return await Mediator.Send(new ConfirmarEmailCommand() { userId = userId, token = token});
-
         }
-
-
-
-
     }
 }

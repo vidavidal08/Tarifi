@@ -15,39 +15,20 @@ namespace NicosApp.Infraestructura.Repositorios
         /// 
         /// </summary>
         private NicosAppContext _nicosAppContext;
-
-
-
-      
-
         public NicoRepositorio(NicosAppContext nicosAppContext) : base(nicosAppContext)
         {
             _nicosAppContext = nicosAppContext;
         }
-
-
         /// <summary>
         /// 
         /// </summary>
         /// <returns></returns>
         public async Task<Nico> getAllWhereIdFraccionAndId(Guid idFraccion, Guid id)
         {
-
             var nico = await _nicosAppContext.Nicos
-                                             .Where(c => c.Id == id)
-                                             .FirstOrDefaultAsync();
-
-
-
-
-
+                .Where(c => c.Id == id)
+                .FirstOrDefaultAsync();
             return nico;
-
         }
-
-
-
-
-
     }
 }

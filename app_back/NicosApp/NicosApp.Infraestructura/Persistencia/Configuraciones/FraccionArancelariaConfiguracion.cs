@@ -11,8 +11,6 @@ namespace NicosApp.Infraestructura.Persistencia.Configuraciones
 {
     public class FraccionArancelariaConfiguracion : IEntityTypeConfiguration<FraccionArancelaria>
     {
-
-
         /// <summary>
         /// 
         /// </summary>
@@ -20,49 +18,31 @@ namespace NicosApp.Infraestructura.Persistencia.Configuraciones
         public void Configure(EntityTypeBuilder<FraccionArancelaria> builder)
         {
             builder.ToTable("FraccionArancelarias");
-
-
             builder.HasKey(e => e.Id);
-
-
             builder.Property(e => e.Id)
                .HasColumnName("IdFraccionArancelaria")
                .ValueGeneratedNever();
-
 
             builder.Property(e => e.ClaveFraccion)
              .IsRequired()
              .HasColumnName("ClaveFraccion")
              .HasMaxLength(50);
 
-
-
             builder.Property(e => e.Descripcion)
             .HasColumnName("Descripcion")
             .HasMaxLength(3000);
-
-
-
 
             builder.Property(e => e.UnidadMedida)
            .HasColumnName("UnidadMedida")
            .HasMaxLength(50);
 
-
-
             builder.Property(e => e.IGI)
            .HasColumnName("IGI")
            .HasMaxLength(50);
 
-
-
             builder.Property(e => e.IGE)
            .HasColumnName("IGE")
            .HasMaxLength(50);
-
-
-
-
 
             // Seed
             builder.HasData(new List<FraccionArancelaria> {
@@ -77,7 +57,6 @@ namespace NicosApp.Infraestructura.Persistencia.Configuraciones
                     ClaveFraccion = "0101.29.02"
                 }
             });
-
         }
     }
 }

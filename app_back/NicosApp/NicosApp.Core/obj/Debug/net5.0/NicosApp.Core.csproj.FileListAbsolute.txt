@@ -21,3 +21,15 @@ C:\Proyectos\TARIFIFI-PRODUCCION\Tarifi\app_back\NicosApp\NicosApp.Core\obj\Debu
 C:\Proyectos\TARIFIFI-PRODUCCION\Tarifi\app_back\NicosApp\NicosApp.Core\obj\Debug\net5.0\ref\NicosApp.Core.dll
 C:\Proyectos\TARIFIFI-PRODUCCION\Tarifi\app_back\NicosApp\NicosApp.Core\obj\Debug\net5.0\NicosApp.Core.pdb
 C:\Proyectos\TARIFIFI-PRODUCCION\Tarifi\app_back\NicosApp\NicosApp.Core\obj\Debug\net5.0\NicosApp.Core.csproj.AssemblyReference.cache
+C:\git\Tarifi\app_back\NicosApp\NicosApp.Core\bin\Debug\net5.0\NicosApp.Core.deps.json
+C:\git\Tarifi\app_back\NicosApp\NicosApp.Core\bin\Debug\net5.0\NicosApp.Core.dll
+C:\git\Tarifi\app_back\NicosApp\NicosApp.Core\bin\Debug\net5.0\ref\NicosApp.Core.dll
+C:\git\Tarifi\app_back\NicosApp\NicosApp.Core\bin\Debug\net5.0\NicosApp.Core.pdb
+C:\git\Tarifi\app_back\NicosApp\NicosApp.Core\obj\Debug\net5.0\NicosApp.Core.csproj.AssemblyReference.cache
+C:\git\Tarifi\app_back\NicosApp\NicosApp.Core\obj\Debug\net5.0\NicosApp.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\git\Tarifi\app_back\NicosApp\NicosApp.Core\obj\Debug\net5.0\NicosApp.Core.AssemblyInfoInputs.cache
+C:\git\Tarifi\app_back\NicosApp\NicosApp.Core\obj\Debug\net5.0\NicosApp.Core.AssemblyInfo.cs
+C:\git\Tarifi\app_back\NicosApp\NicosApp.Core\obj\Debug\net5.0\NicosApp.Core.csproj.CoreCompileInputs.cache
+C:\git\Tarifi\app_back\NicosApp\NicosApp.Core\obj\Debug\net5.0\NicosApp.Core.dll
+C:\git\Tarifi\app_back\NicosApp\NicosApp.Core\obj\Debug\net5.0\ref\NicosApp.Core.dll
+C:\git\Tarifi\app_back\NicosApp\NicosApp.Core\obj\Debug\net5.0\NicosApp.Core.pdb

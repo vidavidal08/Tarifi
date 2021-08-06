@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using NicosApp.Core.Entidades;
-using NicosApp.Infraestructura.Identity;
 using System.Reflection;
 /// <summary>
 /// Autor: ISC. Magdiel Efrain Palacios Rivera
@@ -16,14 +15,8 @@ namespace NicosApp.Infraestructura.Data
         {
             ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;
         }
-
-
-
         public virtual DbSet<Nico> Nicos { get; set; }
         public virtual DbSet<FraccionArancelaria> FraccionArancelarias { get; set; }
-
-
-
         /// <summary>
         /// 
         /// </summary>
@@ -32,14 +25,6 @@ namespace NicosApp.Infraestructura.Data
         {
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
             base.OnModelCreating(modelBuilder);
-
-
-           
         }
-
-
-    
-
-
     }
 }

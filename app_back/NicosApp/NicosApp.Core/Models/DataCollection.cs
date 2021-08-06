@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NicosApp.Core.Models
 {
@@ -15,7 +12,6 @@ namespace NicosApp.Core.Models
                 return Items != null && Items.Any();
             }
         }
-
         public IEnumerable<T> Items { get; set; }
         public int Total { get; set; }
         public int Page { get; set; }

@@ -1,9 +1,4 @@
 ﻿using FluentValidation;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NicosApp.Core.Feactures.Fraccion.Commands.CreateCSVFraccionPermisoAcotacion
 {
@@ -11,7 +6,6 @@ namespace NicosApp.Core.Feactures.Fraccion.Commands.CreateCSVFraccionPermisoAcot
     {
         public CreateFraccionPermisoAcotacionCSVCommandValidator()
         {
-
             RuleFor(x => x.ArchivoCSV.Length)
                     .NotNull()
                     .LessThanOrEqualTo(4 * 1024 * 1024)
@@ -21,9 +15,6 @@ namespace NicosApp.Core.Feactures.Fraccion.Commands.CreateCSVFraccionPermisoAcot
                     .NotNull()
                     .Must(x => x.Equals("text/csv"))
            .WithMessage("Tipo de formato no permitido");
-
-
-
         }
     }
 }

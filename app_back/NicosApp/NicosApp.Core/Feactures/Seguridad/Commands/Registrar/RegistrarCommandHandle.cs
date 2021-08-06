@@ -14,32 +14,22 @@ namespace NicosApp.Core.Feactures.Seguridad.Commands.Registrar
 {
     public class RegistrarCommandHandle : IRequestHandler<RegistrarUsuarioCommand, Result>
     {
-
         /// <summary>
         /// 
         /// </summary>
         private readonly UserManager<ApplicationUser> _userManager;
-
         /// <summary>
         /// 
         /// </summary>
         private readonly IUsuarioRepositorio _usuarioRepositorio;
-
-
         /// <summary>
         /// 
         /// </summary>
         private readonly IEmailNotification _emailNotification;
-
-
         /// <summary>
         /// 
         /// </summary>
         private readonly ISchemaAcountUrlConfirmEmailService _schemaAcountUrlConfirmEmailService;
-
-
-
-
         public RegistrarCommandHandle(UserManager<ApplicationUser> userManager,
                                       IUsuarioRepositorio usuarioRepositorio,
                                       IEmailNotification emailNotification,
@@ -50,13 +40,7 @@ namespace NicosApp.Core.Feactures.Seguridad.Commands.Registrar
             _usuarioRepositorio = usuarioRepositorio;
             _emailNotification = emailNotification;
             _schemaAcountUrlConfirmEmailService = schemaAcountUrlConfirmEmailService;
- 
         }
-
-
-
-
-
         /// <summary>
         /// 
         /// </summary>
@@ -65,8 +49,6 @@ namespace NicosApp.Core.Feactures.Seguridad.Commands.Registrar
         /// <returns></returns>
         public async Task<Result> Handle(RegistrarUsuarioCommand request, CancellationToken cancellationToken)
         {
-
-
             string confirmationToken = "";
 
             var existe = await _usuarioRepositorio.isWhereEmailAsync(request.Email);
@@ -74,9 +56,7 @@ namespace NicosApp.Core.Feactures.Seguridad.Commands.Registrar
             if (existe)
             {
                 throw new ApiException("Ya éxiste un usuario registrado con ese Email");
-                         
             }
-
 
             var usuario = new ApplicationUser
             {
@@ -84,18 +64,12 @@ namespace NicosApp.Core.Feactures.Seguridad.Commands.Registrar
                 UserName = request.Email,
                 Nombre = request.Nombre,
                 Apellidos = request.Apellidos
-
             };
-
-
 
             var resultado = await _usuarioRepositorio.createUserAsync(usuario, request.Password);
 
-
             if (resultado.Succeeded)
             {
-
-
                 //try
                 //{
                 //    confirmationToken = await _userManager.GenerateEmailConfirmationTokenAsync(usuario);
@@ -107,14 +81,7 @@ namespace NicosApp.Core.Feactures.Seguridad.Commands.Registrar
                 //                         ex.Message);
                 //}
 
-
-
-
-
-
                 //var callbackLink = _schemaAcountUrlConfirmEmailService.Geturl(usuario.Id, confirmationToken);
-
-
 
                 ////string value = "Confirme su cuenta haciendo clic en este enlace: <a href=\"" + callbackLink + "\">link</a>";
 
@@ -125,7 +92,6 @@ namespace NicosApp.Core.Feactures.Seguridad.Commands.Registrar
                 //    Subject = "Confirmar cuenta"
 
                 //};
-
 
                 //try
                 //{
@@ -138,15 +104,12 @@ namespace NicosApp.Core.Feactures.Seguridad.Commands.Registrar
                 //                           ex.Message);
                 //}
 
-
                 var mensaje = new EmailMessage()
                 {
                     Email = request.Email,
                     Body = PlantillaEmail.crearPlantilla(request.Nombre, request.Apellidos, request.Email, request.Password),
                     Subject = "Registro completado"
-
                 };
-
 
                 try
                 {
@@ -154,26 +117,11 @@ namespace NicosApp.Core.Feactures.Seguridad.Commands.Registrar
                 }
                 catch (System.Exception ex)
                 {
-
-                    throw new ManejadorExcepcion(System.Net.HttpStatusCode.BadRequest,
-                                           ex.Message);
+                    throw new ManejadorExcepcion(System.Net.HttpStatusCode.BadRequest, ex.Message);
                 }
-
-
-
                 return Result.Success("Usuario registrado correctamente");
-
             }
-
-
-
             throw new ApiException("Error en registrar la cuenta");
-
-       
-
-            
-
-
         }
     }
 }

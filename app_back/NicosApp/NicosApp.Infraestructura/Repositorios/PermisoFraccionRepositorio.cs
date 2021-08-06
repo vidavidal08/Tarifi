@@ -2,11 +2,6 @@
 using NicosApp.Core.Interfaces.Repositorios;
 using NicosApp.Infraestructura.Data;
 using NicosApp.Infraestructura.Repositorios.Base;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NicosApp.Infraestructura.Repositorios
 {
@@ -16,15 +11,9 @@ namespace NicosApp.Infraestructura.Repositorios
         /// 
         /// </summary>
         private NicosAppContext _nicosAppContext;
-
-
-
         public PermisoFraccionRepositorio(NicosAppContext nicosAppContext) : base(nicosAppContext)
         {
             _nicosAppContext = nicosAppContext;
         }
-
-
-
     }
 }

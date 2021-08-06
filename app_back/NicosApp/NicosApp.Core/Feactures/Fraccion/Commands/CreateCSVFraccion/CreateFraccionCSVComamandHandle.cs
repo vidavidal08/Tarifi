@@ -4,10 +4,7 @@ using NicosApp.Core.Entidades;
 using NicosApp.Core.Interfaces.Files;
 using NicosApp.Core.Interfaces.Repositorios;
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -15,29 +12,18 @@ namespace NicosApp.Core.Feactures.Fraccion.Commands.CreateCSVFraccion
 {
     public class CreateFraccionCSVComamandHandle : INotificationHandler<CreateFraccionCSVCommand>
     {
-
-
         /// <summary>
         /// 
         /// </summary>
         private readonly IFraccionArancelariaRepositorio _fraccionArancelariaRepositorio;
-
-
-
-
         /// <summary>
         /// 
         /// </summary>
         private readonly ICsvFraccionFileBuilder _csvFileBuilder;
-
-
         /// <summary>
         /// 
         /// </summary>
         private readonly IMapper _mapper;
-
-
-
         public CreateFraccionCSVComamandHandle(IFraccionArancelariaRepositorio fraccionArancelariaRepositorio,
                                            ICsvFraccionFileBuilder csvFileBuilder,
                                            IMapper mapper)
@@ -46,11 +32,6 @@ namespace NicosApp.Core.Feactures.Fraccion.Commands.CreateCSVFraccion
             _csvFileBuilder = csvFileBuilder;
             _mapper = mapper;
         }
-
-
-
-
-
         /// <summary>
         /// 
         /// </summary>
@@ -68,11 +49,7 @@ namespace NicosApp.Core.Feactures.Fraccion.Commands.CreateCSVFraccion
                 var fileBytes = ms.ToArray();
 
             }
-
-
             var fraccionDto = _csvFileBuilder.ReadCsvFileToEmployeeModel(csv.OpenReadStream());
-
-
             if (fraccionDto != null)
             {
 
@@ -97,8 +74,6 @@ namespace NicosApp.Core.Feactures.Fraccion.Commands.CreateCSVFraccion
 
                 }
             }
-
-
         }
     }
 }

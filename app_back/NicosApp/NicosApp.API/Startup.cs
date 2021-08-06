@@ -3,23 +3,23 @@ using FluentValidation.AspNetCore;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ApiExplorer;
+using Microsoft.AspNetCore.Mvc.Infrastructure;
+using Microsoft.AspNetCore.Mvc.Routing;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using NicosApp.API.Helpers;
 using NicosApp.API.Middleware;
-using NicosApp.Core.Feactures.Nicos.Commands.CreateCSVNicos;
+using NicosApp.API.Services;
 using NicosApp.Core.Feactures.Fraccion.Querys.GetNicoList;
+using NicosApp.Core.Feactures.Nicos.Commands.CreateCSVNicos;
+using NicosApp.Core.Interfaces.Identity;
 using NicosApp.Core.Mappings;
 using NicosApp.Infraestructura;
 using System.Reflection;
-using NicosApp.Core.Interfaces.Identity;
-using NicosApp.API.Services;
-using Microsoft.AspNetCore.Mvc.Infrastructure;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Routing;
-using NicosApp.API.Helpers;
-using Microsoft.AspNetCore.Mvc.ApiExplorer;
 
 namespace NicosApp.API
 {
@@ -29,13 +29,10 @@ namespace NicosApp.API
         {
             Configuration = configuration;
         }
-
         public IConfiguration Configuration { get; }
-
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
             services.AddControllers(options =>
             {
                 options.Conventions.Add(new GroupingByNamespaceConvention());
@@ -50,21 +47,14 @@ namespace NicosApp.API
                             cfg => cfg.RegisterValidatorsFromAssemblyContaining<CreateNicosCSVCommandHandle>());
 
             services.AddHttpContextAccessor();
-
-
-
             services.AddSingleton<IActionContextAccessor, ActionContextAccessor>()
             .AddScoped<IUrlHelper>(
-        serviceProvider => new UrlHelper(
-            serviceProvider.GetRequiredService<IActionContextAccessor>()
-                .ActionContext
-        )
-    );
-
+                serviceProvider => new UrlHelper(
+                    serviceProvider.GetRequiredService<IActionContextAccessor>()
+                    .ActionContext));
 
             services.AddInfrastructureServices(Configuration);
-
-
+            
             #region API Versioning  
             services.AddApiVersioning(options =>
             { // Specify the default API Version as 1.0
@@ -76,14 +66,11 @@ namespace NicosApp.API
             });
             #endregion
 
-
             services.AddVersionedApiExplorer(options =>
             {
                 options.GroupNameFormat = "'v'VVV";
                 options.SubstituteApiVersionInUrl = true;
             });
-
-
 
             services.AddSwaggerGen(c =>
             {
@@ -100,10 +87,6 @@ namespace NicosApp.API
                 c.DocumentFilter<DocumentFilter>();
             });
 
-
-
-
-
             // Auto Mapper Configurations
             var mapperConfig = new MapperConfiguration(mc =>
             {
@@ -113,45 +96,28 @@ namespace NicosApp.API
             IMapper mapper = mapperConfig.CreateMapper();
             services.AddSingleton(mapper);
 
-
-
-
             services.AddMediatR(typeof(GetFraccionArancelariaListQuery).Assembly);
             services.AddMediatR(Assembly.GetExecutingAssembly());
-
-
 
             services.AddSingleton<ICurrentUserService, CurrentUserService>();
             services.AddSingleton<ISchemaAcountUrlConfirmEmailService, SchemaAcountUrlConfirmEmailService>();
 
-
             services.AddCors();
-
-
             //services.AddMvc();
-
             //var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("StrONGKAutHENTICATIONKEy"));
             // services.AddMvc();
-
-
         }
-
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IApiVersionDescriptionProvider provider)
         {
-
            // app.UseMiddleware<ManejadorErrorMiddleware>();
             app.UseMiddleware<ErrorHandlerMiddleware>();
 
             if (env.IsDevelopment())
             {
                 //app.UseDeveloperExceptionPage();
-
             }
-
-
             app.UseSwagger();
-           
             app.UseSwaggerUI(
                 options =>
                 {
@@ -160,14 +126,9 @@ namespace NicosApp.API
                         options.SwaggerEndpoint($"/swagger/{description.GroupName}/swagger.json", description.GroupName);
                     }
                 });
-
             app.UseHttpsRedirection();
-
             app.UseRouting();
-
-          //  app.UseCors("CorsRule");
-
-
+            //  app.UseCors("CorsRule");
             // global cors policy
             app.UseCors(x => x
                 .AllowAnyMethod()
@@ -175,11 +136,9 @@ namespace NicosApp.API
                 .SetIsOriginAllowed(origin => true) // allow any origin
                 .AllowCredentials()); // allow credentials
 
-
             app.UseAuthentication();
             app.UseAuthorization();
 
-            
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
