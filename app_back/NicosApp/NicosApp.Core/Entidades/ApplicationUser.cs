@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
+using System.Collections;
+using System.Collections.Generic;
 
 namespace NicosApp.Core.Entidades
 {
@@ -6,5 +8,6 @@ namespace NicosApp.Core.Entidades
     {
         public string Nombre { get; set; }
         public string Apellidos { get; set; }
+        public ICollection<Suscripcion> Suscripciones { get; set; }
     }
 }
