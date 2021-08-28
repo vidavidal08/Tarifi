@@ -368,7 +368,6 @@ C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.API\bin\D
 C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.API\bin\Debug\net5.0\NicosApp.Infraestructura.dll
 C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.API\bin\Debug\net5.0\NicosApp.Infraestructura.pdb
 C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.API\bin\Debug\net5.0\NicosApp.Core.pdb
-C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.API\obj\Debug\net5.0\NicosApp.API.csproj.AssemblyReference.cache
 C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.API\obj\Debug\net5.0\NicosApp.API.GeneratedMSBuildEditorConfig.editorconfig
 C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.API\obj\Debug\net5.0\NicosApp.API.AssemblyInfoInputs.cache
 C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.API\obj\Debug\net5.0\NicosApp.API.AssemblyInfo.cs
@@ -383,3 +382,4 @@ C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.API\obj\D
 C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.API\obj\Debug\net5.0\ref\NicosApp.API.dll
 C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.API\obj\Debug\net5.0\NicosApp.API.pdb
 C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.API\obj\Debug\net5.0\NicosApp.API.genruntimeconfig.cache
+C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.API\bin\Debug\net5.0\FluentScheduler.dll

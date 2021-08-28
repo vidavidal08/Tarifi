@@ -9,6 +9,7 @@
       "NicosApp.Infraestructura/1.0.0": {
         "dependencies": {
           "CsvHelper": "24.0.1",
+          "FluentScheduler": "5.5.1",
           "MailKit": "2.10.1",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "5.0.2",
           "Microsoft.AspNetCore.Identity": "2.2.0",
@@ -101,6 +102,14 @@
           "lib/netstandard2.0/ExcelNumberFormat.dll": {
             "assemblyVersion": "1.0.10.0",
             "fileVersion": "1.0.10.0"
+          }
+        }
+      },
+      "FluentScheduler/5.5.1": {
+        "runtime": {
+          "lib/netstandard2.1/FluentScheduler.dll": {
+            "assemblyVersion": "5.5.1.0",
+            "fileVersion": "5.5.1.0"
           }
         }
       },
@@ -1365,6 +1374,7 @@
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "8.1.1",
           "CsvHelper": "24.0.1",
           "CsvHelper.Excel.Core": "22.1.1",
+          "FluentScheduler": "5.5.1",
           "FluentValidation.AspNetCore": "9.5.1",
           "MediatR": "9.0.0",
           "MediatR.Extensions.Microsoft.DependencyInjection": "9.0.0",
@@ -1431,6 +1441,13 @@
       "sha512": "sha512-dRx817M5t0sv4GCJyAXU8qmhFXcqRpCHzLpxNmkMWTvzlfE0/KM7BNk6qEble0ffAr4xT7RyU7s/HpovVlA/9g==",
       "path": "excelnumberformat/1.0.10",
       "hashPath": "excelnumberformat.1.0.10.nupkg.sha512"
+    },
+    "FluentScheduler/5.5.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OwehD7vZ1CFAboLPrfBTibz/FeKg8DK1h242u0Y050dbfcOlb+d4S/iGBNt/yHaHIhCsmPiQqQjG13e441xWLA==",
+      "path": "fluentscheduler/5.5.1",
+      "hashPath": "fluentscheduler.5.5.1.nupkg.sha512"
     },
     "FluentValidation/9.5.1": {
       "type": "package",
