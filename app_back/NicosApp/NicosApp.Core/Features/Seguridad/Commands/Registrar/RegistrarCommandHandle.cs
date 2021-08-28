@@ -58,12 +58,22 @@ namespace NicosApp.Core.Features.Seguridad.Commands.Registrar
                 throw new ApiException("Ya éxiste un usuario registrado con ese Email");
             }
 
+            var cliente = "PLAY_STORE";
+            if(request.Cliente == Enums.TipoActivacion.TESTING)
+            {
+                cliente = "TESTING";
+            }
+
+
             var usuario = new ApplicationUser
             {
                 Email = request.Email,
                 UserName = request.Email,
                 Nombre = request.Nombre,
-                Apellidos = request.Apellidos
+                Apellidos = request.Apellidos,
+                Cliente = cliente,
+                Estatus = true
+
             };
 
             var resultado = await _usuarioRepositorio.createUserAsync(usuario, request.Password);

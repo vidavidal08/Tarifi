@@ -34,3 +34,21 @@ C:\Proyectos\TARIFIFI-PRODUCCION\Tarifi\app_back\NicosApp\NicosApp.Infraestructu
 C:\Proyectos\TARIFIFI-PRODUCCION\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Release\net5.0\ref\NicosApp.Infraestructura.dll
 C:\Proyectos\TARIFIFI-PRODUCCION\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Release\net5.0\NicosApp.Infraestructura.pdb
 C:\Proyectos\TARIFIFI-PRODUCCION\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Release\net5.0\NicosApp.Infraestructura.genruntimeconfig.cache
+C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\bin\Release\net5.0\NicosApp.Infraestructura.deps.json
+C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\bin\Release\net5.0\NicosApp.Infraestructura.runtimeconfig.json
+C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\bin\Release\net5.0\NicosApp.Infraestructura.runtimeconfig.dev.json
+C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\bin\Release\net5.0\NicosApp.Infraestructura.dll
+C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\bin\Release\net5.0\ref\NicosApp.Infraestructura.dll
+C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\bin\Release\net5.0\NicosApp.Infraestructura.pdb
+C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\bin\Release\net5.0\NicosApp.Core.dll
+C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\bin\Release\net5.0\NicosApp.Core.pdb
+C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Release\net5.0\NicosApp.Infraestructura.csproj.AssemblyReference.cache
+C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Release\net5.0\NicosApp.Infraestructura.GeneratedMSBuildEditorConfig.editorconfig
+C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Release\net5.0\NicosApp.Infraestructura.AssemblyInfoInputs.cache
+C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Release\net5.0\NicosApp.Infraestructura.AssemblyInfo.cs
+C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Release\net5.0\NicosApp.Infraestructura.csproj.CoreCompileInputs.cache
+C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Release\net5.0\NicosApp.Infraestructura.csproj.CopyComplete
+C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Release\net5.0\NicosApp.Infraestructura.dll
+C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Release\net5.0\ref\NicosApp.Infraestructura.dll
+C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Release\net5.0\NicosApp.Infraestructura.pdb
+C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Release\net5.0\NicosApp.Infraestructura.genruntimeconfig.cache

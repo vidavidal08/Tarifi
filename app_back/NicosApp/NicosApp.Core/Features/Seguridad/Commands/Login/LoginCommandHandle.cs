@@ -31,6 +31,12 @@ namespace NicosApp.Core.Features.Seguridad.Commands.Login
         /// 
         /// </summary>
         private readonly ILogger _logger;
+
+
+
+        private static string RENOVACION_PLAN = "RENOVACION_PLAN";
+
+
         public LoginCommandHandle(UserManager<ApplicationUser> userManager,
                             SignInManager<ApplicationUser> signInManager,
                             IJwtGenerador jwtGenerador,
@@ -54,6 +60,16 @@ namespace NicosApp.Core.Features.Seguridad.Commands.Login
             string userName = "";
 
             var usuario = await _userManager.FindByEmailAsync(request.Email);
+
+
+
+
+            if(!usuario.Estatus)
+            {
+                throw new UnauthorizedExeption(RENOVACION_PLAN);
+            }
+         
+
 
             if (usuario == null)
             {

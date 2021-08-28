@@ -161,6 +161,9 @@ namespace NicosApp.Infraestructura.Migrations
                     b.Property<string>("Apellidos")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Cliente")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
                         .HasColumnType("nvarchar(max)");
@@ -170,6 +173,9 @@ namespace NicosApp.Infraestructura.Migrations
                         .HasColumnType("nvarchar(256)");
 
                     b.Property<bool>("EmailConfirmed")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Estatus")
                         .HasColumnType("bit");
 
                     b.Property<bool>("LockoutEnabled")
@@ -234,8 +240,8 @@ namespace NicosApp.Infraestructura.Migrations
                         .HasColumnName("ClaveFraccion");
 
                     b.Property<string>("Descripcion")
-                        .HasMaxLength(1000)
-                        .HasColumnType("nvarchar(1000)")
+                        .HasMaxLength(3000)
+                        .HasColumnType("nvarchar(3000)")
                         .HasColumnName("Descripcion");
 
                     b.Property<string>("IGE")

@@ -34,6 +34,7 @@ C:\Proyectos\TARIFIFI-PRODUCCION\Tarifi\app_back\NicosApp\NicosApp.Infraestructu
 C:\Proyectos\TARIFIFI-PRODUCCION\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\ref\NicosApp.Infraestructura.dll
 C:\Proyectos\TARIFIFI-PRODUCCION\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.pdb
 C:\Proyectos\TARIFIFI-PRODUCCION\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.genruntimeconfig.cache
+<<<<<<< Updated upstream
 C:\git\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\NicosApp.Infraestructura.deps.json
 C:\git\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\NicosApp.Infraestructura.runtimeconfig.json
 C:\git\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\NicosApp.Infraestructura.runtimeconfig.dev.json
@@ -52,3 +53,41 @@ C:\git\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosA
 C:\git\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\ref\NicosApp.Infraestructura.dll
 C:\git\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.pdb
 C:\git\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.genruntimeconfig.cache
+=======
+C:\Users\magef\Desktop\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\NicosApp.Infraestructura.deps.json
+C:\Users\magef\Desktop\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\NicosApp.Infraestructura.runtimeconfig.json
+C:\Users\magef\Desktop\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\NicosApp.Infraestructura.runtimeconfig.dev.json
+C:\Users\magef\Desktop\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\NicosApp.Infraestructura.dll
+C:\Users\magef\Desktop\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\ref\NicosApp.Infraestructura.dll
+C:\Users\magef\Desktop\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\NicosApp.Infraestructura.pdb
+C:\Users\magef\Desktop\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\NicosApp.Core.dll
+C:\Users\magef\Desktop\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\NicosApp.Core.pdb
+C:\Users\magef\Desktop\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.csproj.AssemblyReference.cache
+C:\Users\magef\Desktop\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\magef\Desktop\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.AssemblyInfoInputs.cache
+C:\Users\magef\Desktop\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.AssemblyInfo.cs
+C:\Users\magef\Desktop\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.csproj.CoreCompileInputs.cache
+C:\Users\magef\Desktop\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.csproj.CopyComplete
+C:\Users\magef\Desktop\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.dll
+C:\Users\magef\Desktop\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\ref\NicosApp.Infraestructura.dll
+C:\Users\magef\Desktop\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.pdb
+C:\Users\magef\Desktop\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.genruntimeconfig.cache
+C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\NicosApp.Infraestructura.deps.json
+C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\NicosApp.Infraestructura.runtimeconfig.json
+C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\NicosApp.Infraestructura.runtimeconfig.dev.json
+C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\NicosApp.Infraestructura.dll
+C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\ref\NicosApp.Infraestructura.dll
+C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\NicosApp.Infraestructura.pdb
+C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\NicosApp.Core.dll
+C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\NicosApp.Core.pdb
+C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.csproj.AssemblyReference.cache
+C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.GeneratedMSBuildEditorConfig.editorconfig
+C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.AssemblyInfoInputs.cache
+C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.AssemblyInfo.cs
+C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.csproj.CoreCompileInputs.cache
+C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.csproj.CopyComplete
+C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.dll
+C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\ref\NicosApp.Infraestructura.dll
+C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.pdb
+C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.genruntimeconfig.cache
+>>>>>>> Stashed changes
