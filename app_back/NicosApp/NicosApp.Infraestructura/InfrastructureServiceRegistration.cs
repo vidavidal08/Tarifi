@@ -24,7 +24,8 @@ namespace NicosApp.Infraestructura
         public static IServiceCollection AddInfrastructureServices(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddDbContext<NicosAppContext>(options =>
-            options.UseSqlServer(configuration.GetConnectionString("DefaultConnnection")));
+            //options.UseSqlServer(configuration.GetConnectionString("DefaultConnnection")));
+            options.UseSqlServer("Data Source=.;Initial Catalog=NicosAppDb;Trusted_Connection=True;"));
 
             // Adding Authentication  
             services.AddAuthentication(options =>
