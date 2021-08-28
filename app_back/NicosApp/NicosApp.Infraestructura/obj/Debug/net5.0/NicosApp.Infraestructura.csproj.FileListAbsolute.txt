@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 D:\Proyectos\tirifi_app_DAFSTER-\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\NicosApp.Infraestructura.deps.json
 D:\Proyectos\tirifi_app_DAFSTER-\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\NicosApp.Infraestructura.runtimeconfig.json
 D:\Proyectos\tirifi_app_DAFSTER-\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\NicosApp.Infraestructura.runtimeconfig.dev.json
@@ -35,6 +36,12 @@ C:\Proyectos\TARIFIFI-PRODUCCION\Tarifi\app_back\NicosApp\NicosApp.Infraestructu
 C:\Proyectos\TARIFIFI-PRODUCCION\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.pdb
 C:\Proyectos\TARIFIFI-PRODUCCION\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.genruntimeconfig.cache
 <<<<<<< Updated upstream
+=======
+C:\git\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.GeneratedMSBuildEditorConfig.editorconfig
+C:\git\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.AssemblyInfoInputs.cache
+C:\git\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.AssemblyInfo.cs
+C:\git\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.csproj.CoreCompileInputs.cache
+>>>>>>> e7298c3e6e5dea208f1d75bbb1a2aab6d967b0cd
 C:\git\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\NicosApp.Infraestructura.deps.json
 C:\git\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\NicosApp.Infraestructura.runtimeconfig.json
 C:\git\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\NicosApp.Infraestructura.runtimeconfig.dev.json
@@ -44,15 +51,12 @@ C:\git\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\NicosA
 C:\git\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\NicosApp.Core.dll
 C:\git\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\NicosApp.Core.pdb
 C:\git\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.csproj.AssemblyReference.cache
-C:\git\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.GeneratedMSBuildEditorConfig.editorconfig
-C:\git\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.AssemblyInfoInputs.cache
-C:\git\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.AssemblyInfo.cs
-C:\git\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.csproj.CoreCompileInputs.cache
 C:\git\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.csproj.CopyComplete
 C:\git\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.dll
 C:\git\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\ref\NicosApp.Infraestructura.dll
 C:\git\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.pdb
 C:\git\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.genruntimeconfig.cache
+<<<<<<< HEAD
 =======
 C:\Users\magef\Desktop\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\NicosApp.Infraestructura.deps.json
 C:\Users\magef\Desktop\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\NicosApp.Infraestructura.runtimeconfig.json
@@ -91,3 +95,7 @@ C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.Infraestr
 C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.pdb
 C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.genruntimeconfig.cache
 >>>>>>> Stashed changes
+=======
+C:\git\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\appsettings.Development.json
+C:\git\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\appsettings.json
+>>>>>>> e7298c3e6e5dea208f1d75bbb1a2aab6d967b0cd

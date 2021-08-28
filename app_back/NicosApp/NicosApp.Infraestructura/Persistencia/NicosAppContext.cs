@@ -17,6 +17,10 @@ namespace NicosApp.Infraestructura.Data
         }
         public virtual DbSet<Nico> Nicos { get; set; }
         public virtual DbSet<FraccionArancelaria> FraccionArancelarias { get; set; }
+        public virtual DbSet<Paquete> Paquetes { get; set; }
+        public virtual DbSet<PermisoFraccion> PermisoFraccion { get; set; }
+        public virtual DbSet<Suscripcion> Suscripcion { get; set; }
+        public virtual DbSet<TipoSuscripcion> TipoSuscripcion { get; set; }
         /// <summary>
         /// 
         /// </summary>
