@@ -106,6 +106,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.6.3, )"
+            },
+            "Yay.Enumeration": {
+              "target": "Package",
+              "version": "[0.6.2, )"
             }
           },
           "imports": [

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "nqoAJXxmL4k3OO1m0U6U9D0AK2mD61q+KDcUb9squVwcNwY6gRDjTNjc/xNPKAkWeinyRxBi2uGHogfLMVq2QQ==",
+  "dgSpecHash": "RMjsa/pHZsr4pQ+3SceDQs6YxL3aQXgxVqOWUOMqKBHavPu56BOZYn4uSLr8ZS/as8qlS4XL6AibJ0BC93yxJw==",
   "success": true,
   "projectFilePath": "C:\\Proyectos\\TARIFI PRODUCCION FINAL\\Tarifi\\app_back\\NicosApp\\NicosApp.API\\NicosApp.API.csproj",
   "expectedPackageFiles": [
@@ -157,6 +157,7 @@
     "C:\\Users\\magef\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\magef\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\magef\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
+    "C:\\Users\\magef\\.nuget\\packages\\yay.enumeration\\0.6.2\\yay.enumeration.0.6.2.nupkg.sha512",
     "C:\\Users\\magef\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.5\\microsoft.netcore.app.host.win-x64.5.0.5.nupkg.sha512"
   ],
   "logs": []

@@ -2157,6 +2157,15 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "Yay.Enumeration/0.6.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Yay.Enumerations.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Yay.Enumerations.dll": {}
+        }
+      },
       "NicosApp.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -7268,6 +7277,18 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
+    "Yay.Enumeration/0.6.2": {
+      "sha512": "ZuBOSwjJCnrCY95/j6dNWAQXvVPMfEkkMuITYoTrQrpQu3aN5Ao13JiXK0RLnysVd4FC00OCMYYSsgtZlSccTg==",
+      "type": "package",
+      "path": "yay.enumeration/0.6.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Yay.Enumerations.dll",
+        "yay.enumeration.0.6.2.nupkg.sha512",
+        "yay.enumeration.nuspec"
+      ]
+    },
     "NicosApp.Core/1.0.0": {
       "type": "project",
       "path": "../NicosApp.Core/NicosApp.Core.csproj",
@@ -7293,7 +7314,8 @@
       "Newtonsoft.Json >= 12.0.3",
       "NicosApp.Infraestructura >= 1.0.0",
       "SendGrid >= 9.22.0",
-      "Swashbuckle.AspNetCore >= 5.6.3"
+      "Swashbuckle.AspNetCore >= 5.6.3",
+      "Yay.Enumeration >= 0.6.2"
     ]
   },
   "packageFolders": {
@@ -7404,6 +7426,10 @@
           "Swashbuckle.AspNetCore": {
             "target": "Package",
             "version": "[5.6.3, )"
+          },
+          "Yay.Enumeration": {
+            "target": "Package",
+            "version": "[0.6.2, )"
           }
         },
         "imports": [
