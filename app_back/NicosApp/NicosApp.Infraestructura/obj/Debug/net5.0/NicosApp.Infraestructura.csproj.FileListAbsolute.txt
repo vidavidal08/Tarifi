@@ -1,79 +1,5 @@
-<<<<<<< HEAD
-D:\Proyectos\tirifi_app_DAFSTER-\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\NicosApp.Infraestructura.deps.json
-D:\Proyectos\tirifi_app_DAFSTER-\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\NicosApp.Infraestructura.runtimeconfig.json
-D:\Proyectos\tirifi_app_DAFSTER-\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\NicosApp.Infraestructura.runtimeconfig.dev.json
-D:\Proyectos\tirifi_app_DAFSTER-\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\NicosApp.Infraestructura.dll
-D:\Proyectos\tirifi_app_DAFSTER-\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\ref\NicosApp.Infraestructura.dll
-D:\Proyectos\tirifi_app_DAFSTER-\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\NicosApp.Infraestructura.pdb
-D:\Proyectos\tirifi_app_DAFSTER-\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\NicosApp.Core.dll
-D:\Proyectos\tirifi_app_DAFSTER-\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\NicosApp.Core.pdb
-D:\Proyectos\tirifi_app_DAFSTER-\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.csprojAssemblyReference.cache
-D:\Proyectos\tirifi_app_DAFSTER-\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.GeneratedMSBuildEditorConfig.editorconfig
-D:\Proyectos\tirifi_app_DAFSTER-\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.AssemblyInfoInputs.cache
-D:\Proyectos\tirifi_app_DAFSTER-\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.AssemblyInfo.cs
-D:\Proyectos\tirifi_app_DAFSTER-\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.csproj.CoreCompileInputs.cache
-D:\Proyectos\tirifi_app_DAFSTER-\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.csproj.CopyComplete
-D:\Proyectos\tirifi_app_DAFSTER-\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.dll
-D:\Proyectos\tirifi_app_DAFSTER-\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\ref\NicosApp.Infraestructura.dll
-D:\Proyectos\tirifi_app_DAFSTER-\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.pdb
-D:\Proyectos\tirifi_app_DAFSTER-\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.genruntimeconfig.cache
-C:\Proyectos\TARIFIFI-PRODUCCION\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\NicosApp.Infraestructura.deps.json
-C:\Proyectos\TARIFIFI-PRODUCCION\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\NicosApp.Infraestructura.runtimeconfig.json
-C:\Proyectos\TARIFIFI-PRODUCCION\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\NicosApp.Infraestructura.runtimeconfig.dev.json
-C:\Proyectos\TARIFIFI-PRODUCCION\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\NicosApp.Infraestructura.dll
-C:\Proyectos\TARIFIFI-PRODUCCION\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\ref\NicosApp.Infraestructura.dll
-C:\Proyectos\TARIFIFI-PRODUCCION\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\NicosApp.Infraestructura.pdb
-C:\Proyectos\TARIFIFI-PRODUCCION\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\NicosApp.Core.dll
-C:\Proyectos\TARIFIFI-PRODUCCION\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\NicosApp.Core.pdb
-C:\Proyectos\TARIFIFI-PRODUCCION\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.csproj.AssemblyReference.cache
-C:\Proyectos\TARIFIFI-PRODUCCION\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.GeneratedMSBuildEditorConfig.editorconfig
-C:\Proyectos\TARIFIFI-PRODUCCION\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.AssemblyInfoInputs.cache
-C:\Proyectos\TARIFIFI-PRODUCCION\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.AssemblyInfo.cs
-C:\Proyectos\TARIFIFI-PRODUCCION\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.csproj.CoreCompileInputs.cache
-C:\Proyectos\TARIFIFI-PRODUCCION\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.csproj.CopyComplete
-C:\Proyectos\TARIFIFI-PRODUCCION\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.dll
-C:\Proyectos\TARIFIFI-PRODUCCION\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\ref\NicosApp.Infraestructura.dll
-C:\Proyectos\TARIFIFI-PRODUCCION\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.pdb
-C:\Proyectos\TARIFIFI-PRODUCCION\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.genruntimeconfig.cache
-<<<<<<< Updated upstream
-=======
-C:\git\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.GeneratedMSBuildEditorConfig.editorconfig
-C:\git\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.AssemblyInfoInputs.cache
-C:\git\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.AssemblyInfo.cs
-C:\git\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.csproj.CoreCompileInputs.cache
->>>>>>> e7298c3e6e5dea208f1d75bbb1a2aab6d967b0cd
-C:\git\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\NicosApp.Infraestructura.deps.json
-C:\git\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\NicosApp.Infraestructura.runtimeconfig.json
-C:\git\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\NicosApp.Infraestructura.runtimeconfig.dev.json
-C:\git\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\NicosApp.Infraestructura.dll
-C:\git\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\ref\NicosApp.Infraestructura.dll
-C:\git\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\NicosApp.Infraestructura.pdb
-C:\git\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\NicosApp.Core.dll
-C:\git\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\NicosApp.Core.pdb
-C:\git\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.csproj.AssemblyReference.cache
-C:\git\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.csproj.CopyComplete
-C:\git\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.dll
-C:\git\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\ref\NicosApp.Infraestructura.dll
-C:\git\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.pdb
-C:\git\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.genruntimeconfig.cache
-C:\Users\magef\Desktop\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\NicosApp.Infraestructura.deps.json
-C:\Users\magef\Desktop\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\NicosApp.Infraestructura.runtimeconfig.json
-C:\Users\magef\Desktop\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\NicosApp.Infraestructura.runtimeconfig.dev.json
-C:\Users\magef\Desktop\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\NicosApp.Infraestructura.dll
-C:\Users\magef\Desktop\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\ref\NicosApp.Infraestructura.dll
-C:\Users\magef\Desktop\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\NicosApp.Infraestructura.pdb
-C:\Users\magef\Desktop\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\NicosApp.Core.dll
-C:\Users\magef\Desktop\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\NicosApp.Core.pdb
-C:\Users\magef\Desktop\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.csproj.AssemblyReference.cache
-C:\Users\magef\Desktop\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\magef\Desktop\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.AssemblyInfoInputs.cache
-C:\Users\magef\Desktop\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.AssemblyInfo.cs
-C:\Users\magef\Desktop\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.csproj.CoreCompileInputs.cache
-C:\Users\magef\Desktop\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.csproj.CopyComplete
-C:\Users\magef\Desktop\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.dll
-C:\Users\magef\Desktop\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\ref\NicosApp.Infraestructura.dll
-C:\Users\magef\Desktop\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.pdb
-C:\Users\magef\Desktop\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.genruntimeconfig.cache
+C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\appsettings.Development.json
+C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\appsettings.json
 C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\NicosApp.Infraestructura.deps.json
 C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\NicosApp.Infraestructura.runtimeconfig.json
 C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\NicosApp.Infraestructura.runtimeconfig.dev.json
@@ -92,8 +18,3 @@ C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.Infraestr
 C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\ref\NicosApp.Infraestructura.dll
 C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.pdb
 C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.genruntimeconfig.cache
->>>>>>> Stashed changes
-C:\git\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\appsettings.Development.json
-C:\git\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\appsettings.json
-C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\appsettings.Development.json
-C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\appsettings.json

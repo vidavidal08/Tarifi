@@ -24,7 +24,6 @@ namespace NicosApp.Infraestructura.Persistencia.Configuraciones
 
 
             builder.Property(e => e.FechaInicio)
-              .HasDefaultValue(false)
                .HasColumnType("datetime")
               .HasColumnName("FechaInicio");
 
@@ -43,21 +42,21 @@ namespace NicosApp.Infraestructura.Persistencia.Configuraciones
 
             builder.HasOne(d => d.ApplicationUser)
             .WithMany(p => p.Suscripciones)
-            .HasForeignKey(d => d.ApplicationUserId)
+            .HasForeignKey(d => d.IdApplicationUser)
             .OnDelete(DeleteBehavior.ClientSetNull)
             .HasConstraintName("FK_Suscripcion_User");
 
 
                 builder.HasOne(d => d.Paquete)
               .WithMany(p => p.Suscripciones)
-              .HasForeignKey(d => d.PaqueteID)
+              .HasForeignKey(d => d.IdPaquete)
               .OnDelete(DeleteBehavior.ClientSetNull)
               .HasConstraintName("FK_Suscripcion_Paquete");
 
 
                 builder.HasOne(d => d.TipoSuscripcion)
             .WithMany(p => p.Suscripciones)
-            .HasForeignKey(d => d.TipoSuscripcionId)
+            .HasForeignKey(d => d.IdTipoSuscripcion)
             .OnDelete(DeleteBehavior.ClientSetNull)
             .HasConstraintName("FK_Suscripcion_TipoSuscripcion");
 

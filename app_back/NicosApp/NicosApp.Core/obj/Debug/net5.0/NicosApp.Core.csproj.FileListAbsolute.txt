@@ -1,52 +1,3 @@
-D:\Proyectos\tirifi_app_DAFSTER-\app_back\NicosApp\NicosApp.Core\bin\Debug\net5.0\NicosApp.Core.deps.json
-D:\Proyectos\tirifi_app_DAFSTER-\app_back\NicosApp\NicosApp.Core\bin\Debug\net5.0\NicosApp.Core.dll
-D:\Proyectos\tirifi_app_DAFSTER-\app_back\NicosApp\NicosApp.Core\bin\Debug\net5.0\ref\NicosApp.Core.dll
-D:\Proyectos\tirifi_app_DAFSTER-\app_back\NicosApp\NicosApp.Core\bin\Debug\net5.0\NicosApp.Core.pdb
-D:\Proyectos\tirifi_app_DAFSTER-\app_back\NicosApp\NicosApp.Core\obj\Debug\net5.0\NicosApp.Core.GeneratedMSBuildEditorConfig.editorconfig
-D:\Proyectos\tirifi_app_DAFSTER-\app_back\NicosApp\NicosApp.Core\obj\Debug\net5.0\NicosApp.Core.AssemblyInfoInputs.cache
-D:\Proyectos\tirifi_app_DAFSTER-\app_back\NicosApp\NicosApp.Core\obj\Debug\net5.0\NicosApp.Core.AssemblyInfo.cs
-D:\Proyectos\tirifi_app_DAFSTER-\app_back\NicosApp\NicosApp.Core\obj\Debug\net5.0\NicosApp.Core.csproj.CoreCompileInputs.cache
-D:\Proyectos\tirifi_app_DAFSTER-\app_back\NicosApp\NicosApp.Core\obj\Debug\net5.0\NicosApp.Core.dll
-D:\Proyectos\tirifi_app_DAFSTER-\app_back\NicosApp\NicosApp.Core\obj\Debug\net5.0\ref\NicosApp.Core.dll
-D:\Proyectos\tirifi_app_DAFSTER-\app_back\NicosApp\NicosApp.Core\obj\Debug\net5.0\NicosApp.Core.pdb
-C:\Proyectos\TARIFIFI-PRODUCCION\Tarifi\app_back\NicosApp\NicosApp.Core\bin\Debug\net5.0\NicosApp.Core.deps.json
-C:\Proyectos\TARIFIFI-PRODUCCION\Tarifi\app_back\NicosApp\NicosApp.Core\bin\Debug\net5.0\NicosApp.Core.dll
-C:\Proyectos\TARIFIFI-PRODUCCION\Tarifi\app_back\NicosApp\NicosApp.Core\bin\Debug\net5.0\ref\NicosApp.Core.dll
-C:\Proyectos\TARIFIFI-PRODUCCION\Tarifi\app_back\NicosApp\NicosApp.Core\bin\Debug\net5.0\NicosApp.Core.pdb
-C:\Proyectos\TARIFIFI-PRODUCCION\Tarifi\app_back\NicosApp\NicosApp.Core\obj\Debug\net5.0\NicosApp.Core.GeneratedMSBuildEditorConfig.editorconfig
-C:\Proyectos\TARIFIFI-PRODUCCION\Tarifi\app_back\NicosApp\NicosApp.Core\obj\Debug\net5.0\NicosApp.Core.AssemblyInfoInputs.cache
-C:\Proyectos\TARIFIFI-PRODUCCION\Tarifi\app_back\NicosApp\NicosApp.Core\obj\Debug\net5.0\NicosApp.Core.AssemblyInfo.cs
-C:\Proyectos\TARIFIFI-PRODUCCION\Tarifi\app_back\NicosApp\NicosApp.Core\obj\Debug\net5.0\NicosApp.Core.csproj.CoreCompileInputs.cache
-C:\Proyectos\TARIFIFI-PRODUCCION\Tarifi\app_back\NicosApp\NicosApp.Core\obj\Debug\net5.0\NicosApp.Core.dll
-C:\Proyectos\TARIFIFI-PRODUCCION\Tarifi\app_back\NicosApp\NicosApp.Core\obj\Debug\net5.0\ref\NicosApp.Core.dll
-C:\Proyectos\TARIFIFI-PRODUCCION\Tarifi\app_back\NicosApp\NicosApp.Core\obj\Debug\net5.0\NicosApp.Core.pdb
-C:\Proyectos\TARIFIFI-PRODUCCION\Tarifi\app_back\NicosApp\NicosApp.Core\obj\Debug\net5.0\NicosApp.Core.csproj.AssemblyReference.cache
-<<<<<<< Updated upstream
-C:\git\Tarifi\app_back\NicosApp\NicosApp.Core\bin\Debug\net5.0\NicosApp.Core.deps.json
-C:\git\Tarifi\app_back\NicosApp\NicosApp.Core\bin\Debug\net5.0\NicosApp.Core.dll
-C:\git\Tarifi\app_back\NicosApp\NicosApp.Core\bin\Debug\net5.0\ref\NicosApp.Core.dll
-C:\git\Tarifi\app_back\NicosApp\NicosApp.Core\bin\Debug\net5.0\NicosApp.Core.pdb
-C:\git\Tarifi\app_back\NicosApp\NicosApp.Core\obj\Debug\net5.0\NicosApp.Core.csproj.AssemblyReference.cache
-C:\git\Tarifi\app_back\NicosApp\NicosApp.Core\obj\Debug\net5.0\NicosApp.Core.GeneratedMSBuildEditorConfig.editorconfig
-C:\git\Tarifi\app_back\NicosApp\NicosApp.Core\obj\Debug\net5.0\NicosApp.Core.AssemblyInfoInputs.cache
-C:\git\Tarifi\app_back\NicosApp\NicosApp.Core\obj\Debug\net5.0\NicosApp.Core.AssemblyInfo.cs
-C:\git\Tarifi\app_back\NicosApp\NicosApp.Core\obj\Debug\net5.0\NicosApp.Core.csproj.CoreCompileInputs.cache
-C:\git\Tarifi\app_back\NicosApp\NicosApp.Core\obj\Debug\net5.0\NicosApp.Core.dll
-C:\git\Tarifi\app_back\NicosApp\NicosApp.Core\obj\Debug\net5.0\ref\NicosApp.Core.dll
-C:\git\Tarifi\app_back\NicosApp\NicosApp.Core\obj\Debug\net5.0\NicosApp.Core.pdb
-=======
-C:\Users\magef\Desktop\app_back\NicosApp\NicosApp.Core\bin\Debug\net5.0\NicosApp.Core.deps.json
-C:\Users\magef\Desktop\app_back\NicosApp\NicosApp.Core\bin\Debug\net5.0\NicosApp.Core.dll
-C:\Users\magef\Desktop\app_back\NicosApp\NicosApp.Core\bin\Debug\net5.0\ref\NicosApp.Core.dll
-C:\Users\magef\Desktop\app_back\NicosApp\NicosApp.Core\bin\Debug\net5.0\NicosApp.Core.pdb
-C:\Users\magef\Desktop\app_back\NicosApp\NicosApp.Core\obj\Debug\net5.0\NicosApp.Core.csproj.AssemblyReference.cache
-C:\Users\magef\Desktop\app_back\NicosApp\NicosApp.Core\obj\Debug\net5.0\NicosApp.Core.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\magef\Desktop\app_back\NicosApp\NicosApp.Core\obj\Debug\net5.0\NicosApp.Core.AssemblyInfoInputs.cache
-C:\Users\magef\Desktop\app_back\NicosApp\NicosApp.Core\obj\Debug\net5.0\NicosApp.Core.AssemblyInfo.cs
-C:\Users\magef\Desktop\app_back\NicosApp\NicosApp.Core\obj\Debug\net5.0\NicosApp.Core.csproj.CoreCompileInputs.cache
-C:\Users\magef\Desktop\app_back\NicosApp\NicosApp.Core\obj\Debug\net5.0\NicosApp.Core.dll
-C:\Users\magef\Desktop\app_back\NicosApp\NicosApp.Core\obj\Debug\net5.0\ref\NicosApp.Core.dll
-C:\Users\magef\Desktop\app_back\NicosApp\NicosApp.Core\obj\Debug\net5.0\NicosApp.Core.pdb
 C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.Core\bin\Debug\net5.0\NicosApp.Core.deps.json
 C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.Core\bin\Debug\net5.0\NicosApp.Core.dll
 C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.Core\bin\Debug\net5.0\ref\NicosApp.Core.dll
@@ -58,5 +9,3 @@ C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.Core\obj\
 C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.Core\obj\Debug\net5.0\NicosApp.Core.dll
 C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.Core\obj\Debug\net5.0\ref\NicosApp.Core.dll
 C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.Core\obj\Debug\net5.0\NicosApp.Core.pdb
->>>>>>> Stashed changes
-C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.Core\obj\Debug\net5.0\NicosApp.Core.csproj.AssemblyReference.cache

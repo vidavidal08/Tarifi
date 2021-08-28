@@ -15,19 +15,19 @@ namespace NicosApp.Core.Entidades
         /// <summary>
         /// FK
         /// </summary>
-        public int TipoSuscripcionId { get; set; }
-        public TipoSuscripcion TipoSuscripcion { get; set; }
+        public Guid IdTipoSuscripcion { get; set; }
+        public virtual TipoSuscripcion TipoSuscripcion { get; set; }
 
         /// <summary>
         /// FK
         /// </summary>
-        public string ApplicationUserId { get; set; }
-        public ApplicationUser ApplicationUser { get; set; }
+        public string IdApplicationUser { get; set; }
+        public virtual ApplicationUser ApplicationUser { get; set; }
         
         /// <summary>
         /// FK
         /// </summary>
-        public Guid PaqueteID { get; set; }
-        public Paquete Paquete { get; set; }
+        public Guid IdPaquete { get; set; }
+        public virtual Paquete Paquete { get; set; }
     }
 }
