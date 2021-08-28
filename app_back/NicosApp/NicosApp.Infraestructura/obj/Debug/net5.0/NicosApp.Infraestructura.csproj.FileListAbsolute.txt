@@ -56,8 +56,6 @@ C:\git\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosA
 C:\git\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\ref\NicosApp.Infraestructura.dll
 C:\git\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.pdb
 C:\git\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.genruntimeconfig.cache
-<<<<<<< HEAD
-=======
 C:\Users\magef\Desktop\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\NicosApp.Infraestructura.deps.json
 C:\Users\magef\Desktop\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\NicosApp.Infraestructura.runtimeconfig.json
 C:\Users\magef\Desktop\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\NicosApp.Infraestructura.runtimeconfig.dev.json
@@ -95,7 +93,7 @@ C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.Infraestr
 C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.pdb
 C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\obj\Debug\net5.0\NicosApp.Infraestructura.genruntimeconfig.cache
 >>>>>>> Stashed changes
-=======
 C:\git\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\appsettings.Development.json
 C:\git\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\appsettings.json
->>>>>>> e7298c3e6e5dea208f1d75bbb1a2aab6d967b0cd
+C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\appsettings.Development.json
+C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.Infraestructura\bin\Debug\net5.0\appsettings.json

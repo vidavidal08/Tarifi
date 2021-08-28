@@ -1,5 +1,6 @@
 ﻿using NicosApp.Core.Common;
 using System;
+using System.Collections.Generic;
 
 namespace NicosApp.Core.Entidades
 {
@@ -7,5 +8,7 @@ namespace NicosApp.Core.Entidades
     {
         public string Nombre { get; set; }
         public string Descripcion { get; set; }
+
+        public ICollection<Suscripcion> Suscripciones { get; set; }
     }
 }

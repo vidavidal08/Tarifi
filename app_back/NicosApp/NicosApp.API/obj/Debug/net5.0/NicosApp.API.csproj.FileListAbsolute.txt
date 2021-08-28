@@ -383,4 +383,4 @@ C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.API\obj\D
 C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.API\obj\Debug\net5.0\NicosApp.API.pdb
 C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.API\obj\Debug\net5.0\NicosApp.API.genruntimeconfig.cache
 C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.API\bin\Debug\net5.0\FluentScheduler.dll
-C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.API\obj\Debug\net5.0\NicosApp.API.csproj.AssemblyReference.cache
+C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.API\bin\Debug\net5.0\Yay.Enumerations.dll
