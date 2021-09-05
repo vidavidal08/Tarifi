@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tHKs9JE0yUgoMTHlcsccDhLMIMQ92HV6+uEakAzGHiN7pbJl3wyNW08aXqsNwR4i60oMpdPTQ87ztmjjXGs9eA==",
+  "dgSpecHash": "bANUgK48hK4/bYqLQ7h5GGKZZXZCHHqcIXzN2rGRyGCPSPvM1dkeh62jgIhK6OMG67mEnGgOnDPDDzHs9hggNA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\magef\\Desktop\\app_back\\NicosApp\\NicosApp.API\\NicosApp.API.csproj",
+  "projectFilePath": "C:\\Proyectos\\TARIFI PRODUCCION FINAL\\Tarifi\\app_back\\NicosApp\\NicosApp.API\\NicosApp.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\magef\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\magef\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
