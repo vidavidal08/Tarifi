@@ -133,7 +133,8 @@ export class RegistroPage implements OnInit {
       nombre: this.form.controls.nombre.value,
       apellidos: this.form.controls.apellidos.value,
       email: this.form.controls.correo.value,
-      password: this.form.controls.contra1.value
+      password: this.form.controls.contra1.value,
+      cliente: 'TESTING'//ESTA VERSIÓN TIENE BANDERA PARA QUE ENTREN GRATIS LOS TESTING
     }
   }
 

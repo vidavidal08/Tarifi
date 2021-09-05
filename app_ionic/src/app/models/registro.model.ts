@@ -3,4 +3,5 @@ export interface Registro {
     apellidos?: string;
     email: string;
     password: string;
+    cliente: string;
   }

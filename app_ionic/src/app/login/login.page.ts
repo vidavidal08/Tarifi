@@ -139,14 +139,16 @@ export class LoginPage implements OnInit {
           email: this.f.username.value,
           nombre: token.nombre,
           password: this.f.password.value,
+
           token: token.token
         };
         this.globalStorage.setUserLogin(userLogedIn).then();
         loading.dismiss();
         this.router.navigateByUrl('/home');
       },
-      async () => {
-        const alert = await this.alertCtrl.create({ message: 'Credenciales inválidas', buttons: ['OK'] });
+      async (error) => {
+        console.log(error.error.Mensaje);
+        const alert = await this.alertCtrl.create({ message: error.error.Mensaje, buttons: ['OK'] });
         await alert.present();
         loading.dismiss();
       }
