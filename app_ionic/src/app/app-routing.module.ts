@@ -69,6 +69,14 @@ const routes: Routes = [
     canActivate: [AuthGuardService]
 
   },
+  {
+    path: 'aviso-renov-plan',
+    loadChildren: () => import('./aviso-renov-plan/aviso-renov-plan.module').then( m => m.AvisoRenovPlanPageModule)
+  },
+  {
+    path: 'pago-tarjeta',
+    loadChildren: () => import('./pago-tarjeta/pago-tarjeta.module').then( m => m.PagoTarjetaPageModule)
+  },
 
 ];
 
