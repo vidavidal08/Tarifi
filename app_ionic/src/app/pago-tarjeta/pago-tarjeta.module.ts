@@ -8,12 +8,15 @@ import { PagoTarjetaPageRoutingModule } from './pago-tarjeta-routing.module';
 
 import { PagoTarjetaPage } from './pago-tarjeta.page';
 
+import { ReactiveFormsModule } from '@angular/forms';
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    PagoTarjetaPageRoutingModule
+    PagoTarjetaPageRoutingModule,
+    ReactiveFormsModule
   ],
   declarations: [PagoTarjetaPage]
 })
