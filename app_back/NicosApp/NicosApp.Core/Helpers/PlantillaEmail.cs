@@ -2,6 +2,8 @@
 {
     public class PlantillaEmail
     {
+
+
         /// <summary>
         /// 
         /// </summary>
@@ -25,8 +27,6 @@
                     //"<img class='img-responsive' src='http://cdn.mcauto-images-production.sendgrid.net/b9133c3bbc6cced6/9abb229b-28ff-4977-8ccb-96cea1492944/1000x998.png' style='float:right;width:23%;height: auto;'>" +
                     "</div>" +
                     "</div>" +
-                                //"<br>" +
-                                // "<br>" +
                                 $"<h1>Bienvenido(a) {nombre} {apellidos} </h1>" +
                                 $"<h2>Tu registro en la plataforma ha sido exitoso</h2>" +
                                 $"<h4>Tus credenciales para acceder a la plataforma son las siguientes</h4>" +

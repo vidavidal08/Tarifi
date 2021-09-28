@@ -13,10 +13,14 @@ namespace NicosApp.Infraestructura.Identity
     public class JwtGenerador : IJwtGenerador
     {
         private readonly IConfiguration _configuration;
+
+
         public JwtGenerador(IConfiguration configuration)
         {
             _configuration = configuration;
         }
+
+
         /// <summary>
         /// 
         /// </summary>

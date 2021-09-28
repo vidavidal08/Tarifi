@@ -52,5 +52,10 @@ namespace NicosApp.API.Controllers
         {
             return await Mediator.Send(new ConfirmarEmailCommand() { userId = userId, token = token});
         }
+
+
+
+
+
     }
 }

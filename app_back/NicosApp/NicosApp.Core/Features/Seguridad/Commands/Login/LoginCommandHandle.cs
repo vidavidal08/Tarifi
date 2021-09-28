@@ -83,6 +83,7 @@ namespace NicosApp.Core.Features.Seguridad.Commands.Login
 
             //    throw new UnauthorizedExeption(mensaje);
             //}
+
             var resultado = await _signInManager.CheckPasswordSignInAsync(usuario, request.Password, false);
 
             if (!string.IsNullOrEmpty(userId))

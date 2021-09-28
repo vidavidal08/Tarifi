@@ -36,6 +36,8 @@ namespace NicosApp.API.Controllers
         {
             return Ok(await Mediator.Send(new GetFraccionArancelariaIdQuery() { Id = id }));
         }
+
+
         [HttpGet("{idFraccion}/{id}")]
         [MapToApiVersion("1.0")]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
