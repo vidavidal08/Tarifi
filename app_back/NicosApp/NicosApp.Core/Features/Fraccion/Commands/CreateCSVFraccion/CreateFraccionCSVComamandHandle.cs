@@ -8,6 +8,12 @@ using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
 
+
+/// <summary>
+/// Autor: Magdiel Efrain Palacios Rivera
+/// Fecha: 28-09-2021
+/// </summary>
+
 namespace NicosApp.Core.Features.Fraccion.Commands.CreateCSVFraccion
 {
     public class CreateFraccionCSVComamandHandle : INotificationHandler<CreateFraccionCSVCommand>
@@ -32,8 +38,11 @@ namespace NicosApp.Core.Features.Fraccion.Commands.CreateCSVFraccion
             _csvFileBuilder = csvFileBuilder;
             _mapper = mapper;
         }
+
+
+
         /// <summary>
-        /// 
+        /// Permite cargar el archivo en CSV y mandarlos a la BD.
         /// </summary>
         /// <param name="notification"></param>
         /// <param name="cancellationToken"></param>

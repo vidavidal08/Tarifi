@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using MediatR;
 using NicosApp.Core.Entidades;
+using NicosApp.Core.Interfaces.Identity;
 using NicosApp.Core.Interfaces.Repositorios;
 using System.Collections.Generic;
 using System.Threading;
@@ -22,13 +23,24 @@ namespace NicosApp.Core.Features.Fraccion.Queries.GetFraccionArancelariaDetail
         /// 
         /// </summary>
         private readonly IMapper _mapper;
+
+
+        /// <summary>
+        /// 
+        /// </summary>
+        private readonly ICurrentUserService _currentUserService;
+
+
+
         public GetFraccionArancelariaFiltroHandle(IFraccionArancelariaRepositorio fraccionArancelariaRepositorio,
                                        INicoRepositorio nicoRepositorio,
-                                       IMapper mapper)
+                                       IMapper mapper,
+                                       ICurrentUserService currentUserService)
         {
             _fraccionArancelariaRepositorio = fraccionArancelariaRepositorio;
             _nicoRepositorio = nicoRepositorio;
             _mapper = mapper;
+            _currentUserService = currentUserService;
         }
         /// <summary>
         /// 
@@ -38,6 +50,11 @@ namespace NicosApp.Core.Features.Fraccion.Queries.GetFraccionArancelariaDetail
         /// <returns></returns>
         public async Task<List<GetFraccionArancelariaFiltroDto>> Handle(GetFraccionArancelariaFiltro request, CancellationToken cancellationToken)
         {
+
+            var email = _currentUserService.UserId;
+
+
+
             var fraccionArancelaria = await _fraccionArancelariaRepositorio.getAllFiltro(request.ClaveArancelaria, request.Descripcion);
             var fraccionArancelariaDto = _mapper.Map<List<FraccionArancelaria>, List<GetFraccionArancelariaFiltroDto>>(fraccionArancelaria);
             return fraccionArancelariaDto;

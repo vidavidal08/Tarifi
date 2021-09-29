@@ -64,10 +64,7 @@ namespace NicosApp.Core.Features.Seguridad.Commands.Login
 
 
 
-            if(!usuario.Estatus)
-            {
-                throw new UnauthorizedExeption(RENOVACION_PLAN);
-            }
+         
          
 
 
@@ -76,6 +73,12 @@ namespace NicosApp.Core.Features.Seguridad.Commands.Login
                 string mensaje = "Email o password invalidos";             
 
                 throw new UnauthorizedExeption( mensaje);
+            }
+
+
+            if (!usuario.Estatus)
+            {
+                throw new UnauthorizedExeption(RENOVACION_PLAN);
             }
             //if (!await _userManager.IsEmailConfirmedAsync(usuario))
             //{

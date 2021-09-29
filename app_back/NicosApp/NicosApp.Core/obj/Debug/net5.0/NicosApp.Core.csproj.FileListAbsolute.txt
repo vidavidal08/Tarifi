@@ -9,3 +9,4 @@ C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.Core\obj\
 C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.Core\obj\Debug\net5.0\NicosApp.Core.dll
 C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.Core\obj\Debug\net5.0\ref\NicosApp.Core.dll
 C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.Core\obj\Debug\net5.0\NicosApp.Core.pdb
+C:\Proyectos\TARIFI PRODUCCION FINAL\Tarifi\app_back\NicosApp\NicosApp.Core\obj\Debug\net5.0\NicosApp.Core.csproj.AssemblyReference.cache

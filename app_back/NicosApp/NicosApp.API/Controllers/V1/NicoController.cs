@@ -1,11 +1,12 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using NicosApp.Core.Features.Nicos.Commands.CreateCSVNicos;
 using System.Threading.Tasks;
 
 namespace NicosApp.API.Controllers
 {
-    //[Authorize(AuthenticationSchemes = "Bearer")]
+    
     [RequireHttps]
     [ApiVersion("1.0")]
     public class NicoController  : MiControllerBase
